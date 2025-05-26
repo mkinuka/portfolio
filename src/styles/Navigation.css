@@ -1,0 +1,16 @@
+#list-style {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 2rem;
+}
+
+.link-style {
+    border: 2px solid #5B85AA;
+    padding: 0.3rem;
+    width: 7rem;
+    border-radius: 15px;
+}
+/* .link-style:hover {
+} */
