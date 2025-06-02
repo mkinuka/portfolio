@@ -8,7 +8,7 @@
 #portfolio-section {
     display: flex;
     flex-direction: row;
-    max-width: 90vw;
+    max-width: 95vw;
     gap: 3rem;
     scrollbar-width: thin;
     scrollbar-color: #f46036 #372248;
@@ -16,6 +16,12 @@
     padding: 20px ;
     overflow-x: auto;
     overflow-y: hidden;
+    margin-bottom: 10rem;
+}
+
+.cv-pdf {
+    width: 40rem;
+    height: 57rem;
 }
 
 .portfolio-container {

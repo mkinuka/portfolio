@@ -1,0 +1,90 @@
+ 
+ .menu-button {
+     all:unset;
+    border-radius: 10px;
+    /* background-color: #171123; */
+    width: 4rem;
+    height: 2rem;
+    cursor: pointer;
+    border: none;
+    font-size:2rem; 
+    margin-right:10vw;
+ }
+.menu-button:hover {
+    text-shadow: 2px 2px 4px rgb(137, 64, 185);
+    animation: sizeUp 0.3s ease-in-out forwards;
+}
+
+@keyframes sizeUp {
+    to {
+        height: 2.2rem;
+        width: 4.3rem;
+        font-size: 2.5rem;
+    }
+}
+
+
+ 
+ .test3 {
+    position: fixed;
+    inset: 0;
+    backdrop-filter: blur(6px);
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+        
+} 
+
+.modal-container {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 200;
+    position: fixed;
+    background-color: rgb(59, 13, 32);
+    border-radius: 15px;
+}
+
+#list-style {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 2rem;
+    padding-right: 3rem;
+    z-index: 10;
+    transition: 2s ease-in-out;
+}
+
+.link-style {
+    padding: 0.3rem;
+    width: 7rem;
+    border-radius: 15px;
+    z-index: 10;
+    /* background-color:#4e7da5; */
+}
+
+.link-style:hover{
+    background-color:#1a70bb ;
+    transition: 0.2s ease-in;
+    text-decoration: underline;
+}
+
+#link-decor {
+    text-decoration: none;
+}
+
+#close-modal {
+    border-radius: 15px;
+    background-color: rgb(202, 45, 45);
+    border: none;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+#close-modal:hover {
+text-decoration: underline;
+cursor: pointer;
+}

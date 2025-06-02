@@ -1,16 +1,12 @@
-import { NavLink } from "react-router"
-import "../styles/Navigation.css"
+// import "../styles/Navigation.css";
+import { Modal } from "../components/Modal";
 export const Navigation = () => {
-
-
-    return <>
+  return (
+    <>
+      <nav id="nav">
         <img></img>
-        <ul id="list-style">
-            <li className="link-style"><NavLink to="/">Hem</NavLink></li>
-            <li className="link-style"><NavLink to="/Portfolio">Min Portfolio</NavLink></li>
-            <li className="link-style"><NavLink to="/About">Om Mig</NavLink></li>
-            <li className="link-style"><NavLink to="/Contact">Kontakt</NavLink></li>
-        </ul>    
-    
+        <Modal />
+      </nav>
     </>
-}
+  );
+};
