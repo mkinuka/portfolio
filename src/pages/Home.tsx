@@ -31,11 +31,11 @@ export const Home = () => {
           </div>
           <section id="browse-section">
             <div className="project-cards">
-              <div className="the-front"><h1>Projects</h1></div>
+              <div className="the-front"><h1>About me</h1></div>
               <div className="the-back">back card</div>
             </div>
             <div className="project-cards">
-             <div className="the-front"><h1>About Me</h1></div>
+             <div className="the-front"><h1>Projects</h1></div>
               <div className="the-back">
                 <div className="img-wrapper">
                   <img className="img-slide" src="/src/assets/secound/webshop.png" alt="webshop" />
