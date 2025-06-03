@@ -2,26 +2,20 @@
  .menu-button {
      all:unset;
     border-radius: 10px;
-    /* background-color: #171123; */
     width: 4rem;
     height: 2rem;
     cursor: pointer;
     border: none;
     font-size:2rem; 
     margin-right:10vw;
+    transition: all 0.4s cubic-bezier(0.4,0,0.2,1);
  }
 .menu-button:hover {
-    text-shadow: 2px 2px 4px rgb(137, 64, 185);
-    animation: sizeUp 0.3s ease-in-out forwards;
+    text-shadow: 2px 2px 4px rgb(253, 135, 0);
+    transform: scale(1.15);
+    filter: drop-shadow(0 0 3px #ffd700) drop-shadow(0 0 12px #ffd700);
 }
 
-@keyframes sizeUp {
-    to {
-        height: 2.2rem;
-        width: 4.3rem;
-        font-size: 2.5rem;
-    }
-}
 
 
  
@@ -43,8 +37,9 @@
     transform: translate(-50%, -50%);
     z-index: 200;
     position: fixed;
-    background-color: rgb(59, 13, 32);
+    background-color: rgb(14, 45, 73);
     border-radius: 15px;
+    border: 1px solid rgb(175, 167, 179);
 }
 
 #list-style {
@@ -63,13 +58,12 @@
     width: 7rem;
     border-radius: 15px;
     z-index: 10;
-    /* background-color:#4e7da5; */
 }
 
 .link-style:hover{
     background-color:#1a70bb ;
+    color: rgb(34, 31, 31);
     transition: 0.2s ease-in;
-    text-decoration: underline;
 }
 
 #link-decor {
