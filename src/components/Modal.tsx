@@ -1,9 +1,11 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { NavLink } from "react-router";
 import "../components/Modal.css";
+import { LanguageContext } from "../context/LanguageContext";
 
 export const Modal = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const {type, setLanguage} = useContext(LanguageContext)
 
   const handleClick = () => {
     setIsOpen(!isOpen);
@@ -16,7 +18,8 @@ export const Modal = () => {
   return (
     <>
       <button onClick={handleClick} className="menu-button">
-        Menu
+        {type === "sv" ? "Meny" : "Menu"}
+        {/* Menu */}
       </button>
 
       {isOpen && (
@@ -25,28 +28,28 @@ export const Modal = () => {
             <ul id="list-style">
               <li className="link-style">
                 <NavLink id="link-decor" to="/" onClick={closeModal}>
-                  Hem
+                  {type === "sv" ? "Hem" : "Home"}
                 </NavLink>
               </li>
               <li className="link-style">
                 <NavLink id="link-decor" to="/Portfolio" onClick={closeModal}>
-                  Min Portfolio
+                {type === "sv" ? "Min Portfolio" : "My Portfolio"}
                 </NavLink>
               </li>
               <li className="link-style">
                 <NavLink id="link-decor" to="/About" onClick={closeModal}>
-                  Om Mig
+                {type === "sv" ? "Om Mig" : "About Me"}
                 </NavLink>
               </li>
               <li className="link-style">
                 <NavLink id="link-decor" to="/Contact" onClick={closeModal}>
-                  Kontakt
+                  {type === "sv" ? "Kontakt" : "Contact"}
                 </NavLink>
               </li>
             </ul>
             <div>
               <button id="close-modal" onClick={closeModal}>
-                Close
+                {type === "sv" ? "Stäng" : "Close"}
               </button>
             </div>
           </div>

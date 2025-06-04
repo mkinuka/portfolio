@@ -7,18 +7,17 @@
     cursor: pointer;
     border: none;
     font-size:2rem; 
-    margin-right:10vw;
     transition: all 0.4s cubic-bezier(0.4,0,0.2,1);
+    width: auto;
+    height: auto; 
  }
+ 
 .menu-button:hover {
     text-shadow: 2px 2px 4px rgb(253, 135, 0);
     transform: scale(1.15);
     filter: drop-shadow(0 0 3px #ffd700) drop-shadow(0 0 12px #ffd700);
 }
 
-
-
- 
  .test3 {
     position: fixed;
     inset: 0;

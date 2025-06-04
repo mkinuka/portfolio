@@ -7,3 +7,6 @@ export type PortfolioItemType = {
     description: JSX.Element;
 };
 export type PortfolioArray = PortfolioItemType[];
+
+
+export type Language = "sv" | "eng";

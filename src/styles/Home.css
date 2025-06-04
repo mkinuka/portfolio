@@ -12,7 +12,6 @@
     top: 0;
     left: 0;
     height: 200vh;
-    /* height: auto; */
     width: 100vw;
     background-image: radial-gradient(
         circle at var(--x, 50%) var(--y, 50%),
@@ -54,8 +53,6 @@
 
 .content-container {
     border-radius: 30px;
-    border: 10px solid #6200B3;
-    box-shadow: #8e03ff 2px  2px  8px  8px;
     height: auto;
     width: 80vw;
     position: relative;
@@ -66,6 +63,7 @@
 }
 
 .video-box {
+    border-radius: 30px;
     position: relative;
     width: 80vw;
     height: auto;
@@ -75,8 +73,10 @@
 .video-back {
     width: 100%;
     height: auto;
-    border-radius: 20px 20px 0 0;
+    border-radius: 20px 20px 20px 20px;
     z-index: 1;
+    border: 10px solid #6200B3;
+    box-shadow: #8e03ff 2px  2px  8px  8px;
 }
 
 
@@ -133,7 +133,6 @@
 
 
   .project-cards {
-    /* border: 2px solid white; */
     height: 600px;
     width: 20vw;
     transform-style: preserve-3d;
@@ -142,8 +141,8 @@
     border-radius: 15px;
     margin-top: 3rem;
     box-shadow: #8e03ff 2px  2px  8px  8px;
-    border: 4px solid #6200B3
-
+    border: 4px solid #6200B3;
+    background-color: rgba(101, 2, 126, 0.3);
   }
 
   .project-cards:hover{
@@ -159,12 +158,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 10px;
   }
 
    .the-back {
     position: absolute;
     width: 100%;
-    /* height: 100%; */
     height: auto;
     backface-visibility: hidden;
     transform: rotateY(180deg);
@@ -175,7 +174,6 @@
     width:100%;
     display: flex;
     animation: slide 10s infinite;
-
   }
 
   .img-slide{
@@ -184,6 +182,7 @@
     height: auto;
     object-fit: cover;
     display: block;
+    border-radius: 10px 10px 0 0 ;
   }
 
   @keyframes slide {

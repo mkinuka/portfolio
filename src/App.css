@@ -14,7 +14,13 @@ main {
 
 #nav {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  padding: 10px;
-  height: 7rem;
+  height: 6rem;
+  width: 80vw;
+}
+
+#navigation-container {
+  display: flex;
+  justify-content: center;
 }

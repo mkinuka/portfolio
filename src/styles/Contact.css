@@ -1,0 +1,14 @@
+.contact-container {
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-img {
+    margin: 2rem;
+    width: 20rem;
+    border: 0.5rem solid rebeccapurple;
+    border-radius: 50%;
+
+}
