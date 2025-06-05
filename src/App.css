@@ -23,4 +23,7 @@ main {
 #navigation-container {
   display: flex;
   justify-content: center;
+    background-image: linear-gradient(to bottom, rgba(102, 76, 156, 0.5), rgba(23, 17, 35, 0.5));
+    background-blend-mode: multiply;
+    padding: 0.3rem
 }

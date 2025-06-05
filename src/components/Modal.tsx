@@ -5,7 +5,7 @@ import { LanguageContext } from "../context/LanguageContext";
 
 export const Modal = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const {type, setLanguage} = useContext(LanguageContext)
+  const { type } = useContext(LanguageContext);
 
   const handleClick = () => {
     setIsOpen(!isOpen);
@@ -33,12 +33,12 @@ export const Modal = () => {
               </li>
               <li className="link-style">
                 <NavLink id="link-decor" to="/Portfolio" onClick={closeModal}>
-                {type === "sv" ? "Min Portfolio" : "My Portfolio"}
+                  {type === "sv" ? "Min Portfolio" : "My Portfolio"}
                 </NavLink>
               </li>
               <li className="link-style">
                 <NavLink id="link-decor" to="/About" onClick={closeModal}>
-                {type === "sv" ? "Om Mig" : "About Me"}
+                  {type === "sv" ? "Om Mig" : "About Me"}
                 </NavLink>
               </li>
               <li className="link-style">
