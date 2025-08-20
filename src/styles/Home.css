@@ -1,6 +1,6 @@
 .home-wrapper {
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: auto;
     overflow: hidden;
     display: flex;
@@ -25,11 +25,11 @@
     justify-content: center;
 }
 
+main {
+  margin: 0;
+}
+
 .name-heading {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
         text-align: center;
         color: white;
         font-size: 2rem;
@@ -40,13 +40,12 @@
         border-radius: 10px;
         text-transform: uppercase;
         opacity: 0;
-        animation: homeHeading 3s ease-in forwards;
+        animation: homeHeading 2s ease-in-out forwards;
     }
 
     @keyframes homeHeading {
         to {
 
-            transform: translate(-50%, -90%);
             opacity: 1;
         }
     }
@@ -55,7 +54,6 @@
     border-radius: 30px;
     height: auto;
     width: 80vw;
-    position: relative;
     z-index: 1;
     margin-top: 2rem;
     margin-bottom: 10rem;
@@ -71,8 +69,9 @@
 }
 
 .video-back {
-    width: 100%;
-    height: auto;
+    width: 80vw;
+    height: 38vw;
+    object-fit: cover;
     border-radius: 20px 20px 20px 20px;
     z-index: 1;
     border: 10px solid #6200B3;
@@ -93,6 +92,10 @@
     transition: 0.2s ease-in-out;
 }
 
+.scroll-down {
+  width: auto;
+}
+
 .arrow:hover {
     width: 22px;
     height: 22px;
@@ -110,101 +113,71 @@
     -webkit-transform: rotate(45deg);
   }
 
-  .arrow-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin-top: 3rem;
-  }
-
-
-
-#browse-section {
-    width: 80vw;
-    height: 100vh;
+  .introduction-container {
+    height: 80vh;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
-    margin-top: 3rem;
-    position: relative;
-    perspective: 2000px;
-}
+    justify-content: space-evenly;
 
-
-  .project-cards {
-    height: 600px;
-    width: 20vw;
-    transform-style: preserve-3d;
-    transition: all 1s  ease;
-    perspective: 45em;
-    border-radius: 15px;
-    margin-top: 3rem;
-    box-shadow: #8e03ff 2px  2px  8px  8px;
-    border: 4px solid #6200B3;
-    background-color: rgba(101, 2, 126, 0.3);
   }
 
-  .project-cards:hover{
-    transform: rotateY(180deg);
-  }
-
-  .the-front {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    background-color:rebeccapurple ;
+  .lightIntro {
+    height: 60vh;
+    width: 80vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
   }
 
-   .the-back {
-    position: absolute;
-    width: 100%;
-    height: auto;
-    backface-visibility: hidden;
-    transform: rotateY(180deg);
-    overflow: hidden;
-  }
-
-  .img-wrapper {
-    width:100%;
+  .arrow-container {
+    height: 10vh;
+    width: 80vw;
     display: flex;
-    animation: slide 10s infinite;
+    justify-content: center;
+    align-items: flex-end;
   }
 
-  .img-slide{
-    width: 20vw;
+.split {
+  width: 30vw;
+  height: auto;
+}
+
+.split2 {
+  width: 50vw;
+  height: auto;
+  margin: 0;
+  border-radius: 10% 10% 30% 32%;
+  background-color: rgba(101, 2, 126, 0.2);
+  filter: drop-shadow(0 0 10px #65027e4d) drop-shadow(0 0 30px #8b30e1);
+  padding: 25px;
+}
+
+.intro-text {
+  font-size: 180%;
+  animation: homeHeading 2s ease-in-out forwards;
+  text-align: end;
+  opacity: 0;
+  padding: 1rem;
+  border-radius: 10% 10% 20% 50%;
+}
+
+.intro-heading {
+  font-size: 300%;
+  animation: homeHeading 2s ease-in-out forwards;
+  opacity: 0;
+  text-align: end;
+  margin-top: 0;
+} 
+
+  .port-center-pos {
+    width: 80vw;
     height: auto;
-    height: auto;
-    object-fit: cover;
-    display: block;
-    border-radius: 10px 10px 0 0 ;
+    display: flex;
+    justify-content: center;
   }
 
-  @keyframes slide {
-    0%   { transform: translateX(0); }
-    30%  { transform: translateX(0); }
-    33%  { transform: translateX(-100%); }
-    63%  { transform: translateX(-100%); }
-    66%  { transform: translateX(-200%); }
-    96%  { transform: translateX(-200%); }
-    100% { transform: translateX(0); }
-  }
-
-  @media (max-width: 1200px) {
-    #browse-section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .project-cards {
-        width: 40vw;
-    }
-    .img-slide {
-        width: 40vw;
-    }
+  .about-center-pos {
+    display: flex;
+    justify-content: center;
   }

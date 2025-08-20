@@ -15,7 +15,7 @@ export const Navigation = () => {
       <nav id="nav">
       <div className="top-nav">
         <button className="lang-button" onClick={() => setLanguage(type === "sv" ? "eng" : "sv")}>
-          {type === "sv" ? <span id="flag1" className="fi fi-se"></span> : <span id="flag2" className="fi fi-us"></span>}
+          {type === "sv" ? <span id="flag1" className="fi fi-us"></span> : <span id="flag2" className="fi fi-se"></span>}
         </button>
       </div>
       <div className="menu-nav">

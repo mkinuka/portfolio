@@ -9,7 +9,7 @@ export const Portfolio = () => {
   return (
     <>
       <article id="main-container">
-        <h1>{type === "sv" ? "Projekt" : "Projects"}</h1>
+        <h1 id="main-headiing">{type === "sv" ? "Projekt" : "Projects"}</h1>
         <section id="portfolio-section">
           {portfolioItems.map((p) => (
             <div className="portfolio-container" key={p[type].id}>
@@ -25,9 +25,9 @@ export const Portfolio = () => {
         </section>
         <h1>Resumé</h1>
         <object
-          data="../../public/cv.pdf"
+          data="../cv.pdf"
           type="application/pdf"
-          className="cv-pdf"
+          id="cv-pdf"
         ></object>
       </article>
     </>

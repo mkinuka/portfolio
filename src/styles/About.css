@@ -1,15 +1,17 @@
 .about-container {
     display: flex;
     flex-direction: row;
-    padding: 5rem;
     gap: 10rem;
     align-items: center;
+    height: 100vh;
+    margin-bottom: 6rem;
 }
 
 #about-img {
-    height: 20rem;
-    width: 11rem;
-    border-radius: 15px 5rem 9rem 5px;
+    /* height: 20rem; */
+    height: 90vh;
+    width: 25vw;
+    border-radius: 15px 5rem 40rem 5px;
     border: 2px solid #f46036;
     opacity: 0;
     margin-top: 3rem;

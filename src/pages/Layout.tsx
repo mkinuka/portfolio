@@ -1,6 +1,7 @@
 import { Outlet } from "react-router";
 import { Navigation } from "../components/Navigation";
 import { LanguageProvider } from "../context/LanguageContext";
+
 export const Layout = () => {
   return (
     <>

@@ -1,6 +1,6 @@
 import { useState, useContext } from "react";
 import { NavLink } from "react-router";
-import "../components/Modal.css";
+import "../styles/Modal.css"
 import { LanguageContext } from "../context/LanguageContext";
 
 export const Modal = () => {
@@ -19,7 +19,6 @@ export const Modal = () => {
     <>
       <button onClick={handleClick} className="menu-button">
         {type === "sv" ? "Meny" : "Menu"}
-        {/* Menu */}
       </button>
 
       {isOpen && (
