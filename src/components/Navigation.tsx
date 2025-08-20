@@ -1,5 +1,5 @@
 // import "../styles/Navigation.css";
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { Modal } from "../components/Modal";
 import { LanguageContext } from "../context/LanguageContext";
 import "../styles/navigation.css"

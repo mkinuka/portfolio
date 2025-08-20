@@ -22,9 +22,7 @@ export const Home = () => {
         <div className="content-container">
           <div className="introduction-container">
             <div className="lightIntro">
-              <div className="split">
-
-              </div>
+              <section className="split"></section>
               <section className="split2">
               <h1 className="intro-heading">{type === "sv" ? "Hej! Mitt namn är Moses Kinuka" :  "Hi! My name is Moses Kinuka" }</h1>
               <h3 className="intro-text">{type === "sv" ? "Varmt välkommen till min portfolio. Här kan du utforska mina färdigheter inom front-end utveckling och UX/UI-design, samt ta del av de projekt jag har jobbat med under min resa in i techvärlden." : 
@@ -45,7 +43,8 @@ export const Home = () => {
           <Portfolio></Portfolio>
           </section>
           <section className="about-center-pos">
-            <About></About>
+            <About>
+            </About>
           </section>
           <section className="contact.center-pos">
             <Contact></Contact>

@@ -1,0 +1,57 @@
+.slideshow-container {
+    position: relative;
+    width: 40vw;
+    height: 10vh;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.slideshow-track {
+  display: flex;
+  position: absolute;
+  animation: slide 15s linear infinite;
+  width: max-content;
+}
+
+.slideshow-icons {
+  display: flex;
+  gap: 4rem;
+  padding: 0 2rem;
+  align-items: center;
+} 
+
+/*Keyframes för animationen */
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  } 
+} 
+
+/* Ikon-storlekar och färger */
+.html-icon {
+  color: #e34c26;
+  font-size: 3.5rem;
+}
+.css-icon {
+  color: #264de4;
+  font-size: 3.5rem;
+}
+.js-icon {
+  color: #f0db4f;
+  font-size: 3.5rem;
+}
+.react-icon {
+  color: #61dbfb;
+  font-size: 3.5rem;
+}
+.node-icon {
+  color: #68a063;
+  font-size: 3.5rem;
+}
+.git-icon {
+  color: #f1502f;
+  font-size: 3.5rem;
+}

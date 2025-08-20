@@ -8,9 +8,9 @@
 }
 
 #about-img {
-    /* height: 20rem; */
-    height: 90vh;
-    width: 25vw;
+    height: 25rem;
+    /* height: 90vh; */
+    width: 14rem;
     border-radius: 15px 5rem 40rem 5px;
     border: 2px solid #f46036;
     opacity: 0;

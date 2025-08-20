@@ -2,6 +2,7 @@ import { useContext } from "react";
 import Picture from "../assets/moses2.png";
 import "../styles/About.css";
 import { LanguageContext } from "../context/LanguageContext";
+import { AutoPlaySlideshow } from "../components/AutoplaySlideshow";
 
 export const About = () => {
   const { type } = useContext(LanguageContext);
@@ -27,6 +28,7 @@ export const About = () => {
             and I’m excited to grow my skills and contribute to real life
             projects.`}
           </p>
+        <AutoPlaySlideshow></AutoPlaySlideshow>
         </div>
       </div>
     </>
