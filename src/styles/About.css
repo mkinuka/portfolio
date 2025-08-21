@@ -19,10 +19,10 @@
 }
 .text-container {
     width: 50rem;
-    font-size: larger; 
     display: flex;
     justify-content: center;
     flex-direction: column;
+    font-size: larger; 
     background-color: #372248;
     padding: 3rem;
     border-radius: 5rem;

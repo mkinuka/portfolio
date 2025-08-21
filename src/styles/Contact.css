@@ -1,3 +1,4 @@
+
 .contact-container {
     width: 80vw;
     display: flex;
@@ -11,4 +12,32 @@
     border: 0.5rem solid rebeccapurple;
     border-radius: 50%;
 
+}
+
+.contact-text-container {
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    font-size: larger; 
+    background-color: #372248;
+    padding: 3rem;
+    border-radius: 5rem;
+}
+
+.form-container {
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+}
+
+.info-container {
+    width: 20vw;
+}
+
+.send-message {
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    
 }

@@ -7,7 +7,6 @@ export const AutoPlaySlideshow = () => {
     return <>
             <section className="slideshow-container">
                       <div className="slideshow-track">
-        {/* Duplicera ikonerna för att skapa en oändlig loop */}
         {[...Array(2)].map((_, i) => (
           <div key={i} className="slideshow-icons">
             <FaHtml5 className="html-icon" />
@@ -18,10 +17,8 @@ export const AutoPlaySlideshow = () => {
             <FaGitAlt className="git-icon" />
           </div>
         ))}
-      </div>
-                
-                
-            </section>    
+      </div>  
+        </section>    
     
     </>
 }

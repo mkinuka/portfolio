@@ -51,15 +51,14 @@
   }
 
   .img-wrapper {
-    width:100%;
-    height: 200px;
+    width:20vw;
+    height: auto;
     display: flex;
     animation: slide 10s infinite;
   }
 
   .img-slide{
     width: 20vw;
-    height: auto;
     height: auto;
     object-fit: cover;
     display: block;
@@ -92,6 +91,23 @@
         flex-direction: column;
         align-items: center;
     }
+      .img-wrapper {
+    width:40vw;
+    height: auto;
+    display: flex;
+    animation: slide 10s infinite;
+  }
+  #browse-section {
+    width: 80vw;
+    height: 150vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3rem;
+    position: relative;
+    perspective: 2000px;
+}
+
     .project-cards {
         width: 40vw;
     }
