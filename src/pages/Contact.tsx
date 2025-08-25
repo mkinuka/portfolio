@@ -3,7 +3,7 @@ import picture from "../assets/moses.png"
 export const Contact = () => {
 
     return <>
-        <div className="contact-container">
+        <div id="contact-container">
         <img src={picture} className="contact-img" alt="Picture of me"></img>
         <div className="contact-text-container">
             <div className="info-container">

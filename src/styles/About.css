@@ -1,15 +1,15 @@
-.about-container {
+#about-container {
     display: flex;
     flex-direction: row;
     gap: 10rem;
     align-items: center;
     height: auto;
-    margin-bottom: 6rem;
+    margin-bottom: 10rem;
+    margin-top: 3rem;
 }
 
 #about-img {
     height: 25rem;
-    /* height: 90vh; */
     width: 14rem;
     border-radius: 15px 5rem 40rem 5px;
     border: 2px solid #f46036;

@@ -9,7 +9,7 @@ export const About = () => {
 
   return (
     <>
-      <div className="about-container">
+      <div id="about-container">
         <img src={Picture} alt="Picture of me" id="about-img"></img>
         <div className="text-container">
           <h3>{type === "sv" ? "Om Mig" : "About me"}</h3>
