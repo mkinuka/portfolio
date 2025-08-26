@@ -6,24 +6,33 @@
     align-items: center;
     margin-top: 3rem;
     position: relative;
-    perspective: 2000px;
 }
 
 
   .project-cards {
     height: 600px;
     width: 20vw;
-    transform-style: preserve-3d;
     transition: all 1s  ease;
     perspective: 45em;
     border-radius: 15px;
     margin-top: 3rem;
-    box-shadow: #8e03ff 2px  2px  8px  8px;
-    border: 4px solid #6200B3;
-    background-color: rgba(101, 2, 126, 0.3);
+
   }
 
-  .project-cards:hover{
+  .project-inner {
+  perspective: 45em;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 1s ease;
+  border-radius: 15px;
+  box-shadow: #8e03ff 2px  2px  8px  8px; 
+  border: 4px solid #6200B3; 
+  background-color: rgba(101, 2, 126, 0.3);
+}
+
+  .project-cards:hover .project-inner{
     transform: rotateY(180deg);
   }
 

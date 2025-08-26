@@ -7,7 +7,7 @@ import img3 from "../assets/interactiveMenuimg/interactiveMenuImg.png"
 import img4 from "../assets/interactiveMenuimg/interactiveMenuImg2.png"
 import img5 from "../assets/interactiveMenuimg/mail.jpg"
 import img6 from "../assets/interactiveMenuimg/mail2.jpg"
-import {FaGithub, FaLinkedin, FaLinkedinIn} from "react-icons/fa"
+import {FaGithub, FaLinkedinIn} from "react-icons/fa"
 
 export const InteractiveMenu = () => {
       const { type } = useContext(LanguageContext);
@@ -16,7 +16,9 @@ export const InteractiveMenu = () => {
     return <>
     
       <section id="browse-section">
+        {/* first card */}
             <div className="project-cards">
+              <div className="project-inner">
                <div className="the-front">
                 <img className="container-img" src={img1} alt="img of me"></img>
                 <h1 className="interactiv-header">{type === "sv" ? "Om Mig" : "About Me"}</h1>
@@ -25,10 +27,13 @@ export const InteractiveMenu = () => {
               <img className="container-img-back" src={img2} alt="img of project"></img>
                 <div className="link-box-style">
                 <a className="project-links1" href="#about-container">{type === "sv" ? "Lär känna mig" : "Get to know me"}</a>
+                  </div>
                 </div>
               </div>
             </div>
+        {/* secound card */}
             <div className="project-cards">
+              <div className="project-inner">
               <div className="the-front">
                 <img className="container-img" src={img3} alt="img of project"></img>
                 <h1 className="interactiv-header">{type === "sv" ? "Projekt" : "Projects"}</h1>
@@ -41,7 +46,10 @@ export const InteractiveMenu = () => {
                 </div>
               </div>
             </div>
+          </div>
+      {/* third card */}
             <div className="project-cards">
+              <div className="project-inner">
               <div className="the-front">
                 <img className="container-img" src={img5} alt="img of a mailbox"></img>
                 <h1 className="interactiv-header">{type === "sv" ? "Kontakta mig" : "Contact"}</h1>
@@ -55,7 +63,8 @@ export const InteractiveMenu = () => {
                 </div>
               </div>
             </div>
-          </section>
+          </div>
+        </section>
     
     </>
 }
