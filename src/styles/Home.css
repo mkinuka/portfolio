@@ -181,3 +181,28 @@ main {
     display: flex;
     justify-content: center;
   }
+
+  .contact-center-pos {
+    display: flex;
+    justify-content: center;
+  }
+
+
+  @media screen and (max-width: 1000px) {
+    .intro-heading {
+    font-size: 120%;
+    animation: homeHeading 2s ease-in-out forwards;
+    opacity: 0;
+    text-align: end;
+    margin-top: 0;
+    }
+    
+    .intro-text {
+      font-size: 100%;
+      animation: homeHeading 2s ease-in-out forwards;
+      text-align: end;
+      opacity: 0;
+      padding: 1rem;
+      border-radius: 10% 10% 20% 50%;
+    }
+  }

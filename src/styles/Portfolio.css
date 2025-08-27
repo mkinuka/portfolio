@@ -30,7 +30,7 @@
     flex-direction: column;
     min-width: 60vw;
     background-color: #3B0086;
-    height: 90vh;
+    height: 80vh;
     border-radius: 25px;
     padding: 1rem;
     align-items: center;
@@ -68,12 +68,12 @@
     font-weight: 600;
     text-align: left;
     height: 50%;
-    width: 40vw;
+    width: 50vw;
     padding:5px;
     border-radius: 10px;
     overflow-y: auto;
     padding: 10px;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 /* mediaQuerys */

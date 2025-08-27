@@ -1,28 +1,32 @@
 
 #contact-container {
-    width: 80vw;
+    width: 70vw;
     display: flex;
     align-items: center;
-    flex-direction: column;
 }
 
 .contact-img {
     margin: 2rem;
-    width: 20rem;
-    border: 0.5rem solid rebeccapurple;
+    width: 20vw;
+    border: 0.5rem solid rgb(182, 119, 24);
     border-radius: 50%;
-
 }
 
 .contact-text-container {
-    width: 80vw;
+    width: 70vw;
     display: flex;
     flex-direction: row;
     font-size: larger; 
-    background-color: #372248;
-    padding: 3rem;
+    padding: 1rem;
     border-radius: 5rem;
+    display: flex;
+    margin-bottom: 5rem;
 }
+
+.contact-paragraph {
+    text-align: left;
+}
+
 
 .form-container {
     width: 60vw;
@@ -31,7 +35,12 @@
 }
 
 .info-container {
-    width: 20vw;
+    width: 30vw;
+    margin-right: 2rem;
+}
+
+.socials-container{
+    gap: 2rem;
 }
 
 .send-message {
@@ -39,5 +48,115 @@
     display: flex;
     flex-direction: column;
     width: 30vw;
-    
+}
+
+.project-links-contact-linke,
+.project-links-contact-git {
+    color: rgb(32, 32, 32);
+    padding: 0.5rem;
+    width: auto;
+    height: auto;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    background-color: aliceblue;
+    margin:1rem;
+  }
+
+  .project-links-contact-git:hover {
+    background-color: black;
+    color: rgb(211, 206, 206);
+    transition: 0.2s ease-in;
+  }
+
+  .project-links-contact-linke:hover {
+    background-color: rgb(29, 67, 148);
+    color: rgb(211, 206, 206);
+    transition: 0.2s ease-in;
+  }
+
+
+
+
+/* formuläret */
+
+.form-container {
+width: 30vw;
+border-radius: 1rem;
+padding: 2rem;
+background: rgba(255, 255, 255, 0.);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.contact-form {
+display: flex;
+flex-direction: column;
+opacity: 1;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+#name {
+    width: 30vw;
+}
+
+#message {
+    height: 10rem;
+}
+
+textarea {height: 10rem;}
+
+
+
+.label {
+    text-align: left;
+}
+
+#name, #email {
+    width: 20vw;
+}
+
+#submit-button {
+    cursor: pointer;
+    color: rgb(32, 32, 32);
+    padding: 0.5rem;
+    width: auto;
+    height: auto;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    background-color: aliceblue;
+    border: 0;
+}
+
+#submit-button:hover {
+    background-color:#331970 ;
+    color: rgb(211, 206, 206);
+    transition: 0.2s ease-in;
+}
+
+@media (max-width: 1200px) {
+    .contact-text-container {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    font-size: larger; 
+    padding: 1rem;
+    border-radius: 5rem;
+    display: flex;
+    align-items: center;
+} 
+    .info-container {
+    margin-bottom: 5rem;
+    margin-right: 0;
+    }
 }

@@ -1,32 +1,71 @@
 #about-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 10rem;
     align-items: center;
     height: auto;
-    margin-bottom: 10rem;
+    margin-bottom: 20rem;
     margin-top: 3rem;
 }
 
-#about-img {
-    height: 25rem;
-    width: 14rem;
-    border-radius: 15px 5rem 40rem 5px;
-    border: 2px solid #f46036;
-    opacity: 0;
-    margin-top: 3rem;
-    animation: fadeIn 1s ease-in forwards;
-}
-.text-container {
-    width: 50rem;
+.center-pos-about {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+}
+
+.heading-img-container{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 60vw;
+}
+
+.skills-tools-container {
+    width: 25vw;
+}
+
+.paragraph-one {
+    font-weight: bolder;
+    text-align: left;
+}
+
+.about-heading1 {
+    font-size: 70px;
+    margin: 0;
+    text-align: left;
+}
+
+.about-heading {
+    font-size: 100px;
+    margin: 0;
+    text-align: left;
+}
+
+.text-container {
+    width: 30vw;
+    display: flex;
     flex-direction: column;
     font-size: larger; 
-    background-color: #372248;
-    padding: 3rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    padding-top: 0;
     border-radius: 5rem;
     height: auto;
+}
+
+
+.right-text-container{
+    width: 30vw;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    font-size: smaller;
+    padding-left: 3rem;
+    padding-top: 0;
+    height: auto;
+    text-align: left;
+    line-height: 1.7;
 }
 
 #font-style {
@@ -44,7 +83,7 @@
 
 
 @media screen and (max-width: 1600px){
-    .about-container{
+    #about-container{
         display: flex;
         flex-direction: column;
         padding-top:5rem ;

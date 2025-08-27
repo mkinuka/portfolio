@@ -46,7 +46,7 @@ export const Home = () => {
             <About>
             </About>
           </section>
-          <section className="contact.center-pos">
+          <section className="contact-center-pos">
             <Contact></Contact>
           </section>
             
