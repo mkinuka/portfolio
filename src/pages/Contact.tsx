@@ -55,7 +55,7 @@ const sendEmail = (e: React.FormEvent) => {
                 <form className="contact-form" ref={form} onSubmit={sendEmail}>
                 <h2>{type === "sv" ? "Kontakta mig" : "Contact me"}</h2>
                     <div className="form-group">
-                    <label className="label" htmlFor="name">{type === "sv" ? "Name" : "Name"}</label>
+                    <label className="label" htmlFor="name">{type === "sv" ? "Namn" : "Name"}</label>
                     <input type="text" id="name" name="name" placeholder={type === "sv" ? "Ditt namn" : "Your name" } required />
                     </div>
 
