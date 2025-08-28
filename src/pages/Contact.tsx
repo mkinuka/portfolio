@@ -4,7 +4,9 @@ import { useContext, useRef } from "react"
 import  emailjs from "@emailjs/browser";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { LanguageContext } from "../context/LanguageContext";
-
+const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
 export const Contact = () => {
 const { type } = useContext(LanguageContext);
@@ -16,10 +18,10 @@ const sendEmail = (e: React.FormEvent) => {
         if (form.current) {
       emailjs
         .sendForm(
-          "service_iri2nm2",
-          "template_3h0yqkn",
+          serviceId,
+          templateId,
           form.current,
-          "n5fFKz3p9E5-kKFMQ"
+          publicKey
         )
         .then(
           (result) => {

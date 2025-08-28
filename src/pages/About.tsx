@@ -46,7 +46,7 @@ export const About = () => {
               different interests, but right now it is mainly nature, training, and cooking that are closest to my heart. 
               My passion for nature has always been there, but in recent years hiking has become something truly special. 
               Experiencing places such as Abisko, Lofoten, Geiranger, and the Swiss Alps has made me fall in love with the landscapes, 
-              the wildlife, and the encounters with people, both the ones you travel with and the ones you meet along the way. 
+              the wildlife, and the encounters with people.
               <br></br>
               <br></br>
               Cooking became an interest 
@@ -69,7 +69,7 @@ export const About = () => {
             År 2022–2023 försökte jag därför ändra på detta, just då hade jag ingen konkret 
             plan på vad jag ville göra och i stället började läsa upp mina betyg för att eventuellt öppna dörren 
             till en högre utbildning. Mina intressen har alltid varit naturvetenskap men detta är något som jag nödvändigtvis inte vill arbeta 
-            med då jag har en stark tro att arbeta med dina intressen kan också förstöra dem för dig. 
+            med då jag har en stark tro att arbeta med dina intressen kan också försumma dem för mig. 
             Därför kollade jag tillbaka till mina gymnasiedagar där jag först stötte på programmering och kodning, 
             då hade jag bara skrapat på ytan av en värld som var mycket större än vad jag någonsin trott. 
             Nu har jag påbörjat mitt andra år på medieinstitutet som frontend utvecklare och kunde inte vara mer nöjd med 
