@@ -25,7 +25,7 @@ export const Portfolio = () => {
         </section>
         <h1>Resumé</h1>
         <object
-          data="../cv.pdf"
+           data={`${import.meta.env.BASE_URL}cv.pdf`}
           type="application/pdf"
           id="cv-pdf"
         ></object>

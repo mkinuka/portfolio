@@ -15,7 +15,7 @@ export const router = createBrowserRouter([
                 element: <Home/>
             },
             {
-                path: "/portfolio",
+                path: "/portfoliopage",
                 element: <Portfolio/>
             },
             {
@@ -29,6 +29,9 @@ export const router = createBrowserRouter([
 
         ]
     }
+],
+  {
+    basename: "/portfolio" // <-- detta är korrekt
+  }
 
-
-])
+)
