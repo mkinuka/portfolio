@@ -21,10 +21,6 @@
     width: 60vw;
 }
 
-.skills-tools-container {
-    width: 25vw;
-}
-
 .paragraph-one {
     font-weight: bolder;
     text-align: left;
@@ -74,10 +70,21 @@
 }
 
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1200px){
     .text-container {
-        width: 30rem;
-    } 
+        width: 60vw;
+        padding: 0;
+    }
+     .right-text-container {
+        width: 60vw;
+        padding: 0;
+    }
+
+    .center-pos-about {
+        display: flex;
+        flex-direction: column;
+        width: 60vw;
+    }
 
 }
 

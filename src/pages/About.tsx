@@ -11,8 +11,7 @@ export const About = () => {
       <div id="about-container">
         <div className="center-pos-about">
         <div className="text-container">
-                  <h3 className="about-heading">{type === "sv" ? "Om mig" : "about me"}</h3>
-
+          <h3 className="about-heading">{type === "sv" ? "Om mig" : "About me"}</h3>
             {type === "sv" ? (
           <p id="font-style">
             Mitt namn är Moses Kinuka och jag studerar just nu mitt andra år på
@@ -69,7 +68,7 @@ export const About = () => {
             År 2022–2023 försökte jag därför ändra på detta, just då hade jag ingen konkret 
             plan på vad jag ville göra och i stället började läsa upp mina betyg för att eventuellt öppna dörren 
             till en högre utbildning. Mina intressen har alltid varit naturvetenskap men detta är något som jag nödvändigtvis inte vill arbeta 
-            med då jag har en stark tro att arbeta med dina intressen kan också försumma dem för mig. 
+            med då jag har en stark tro att arbeta mina intressen kan också försumma dem för mig. 
             Därför kollade jag tillbaka till mina gymnasiedagar där jag först stötte på programmering och kodning, 
             då hade jag bara skrapat på ytan av en värld som var mycket större än vad jag någonsin trott. 
             Nu har jag påbörjat mitt andra år på medieinstitutet som frontend utvecklare och kunde inte vara mer nöjd med 
@@ -107,7 +106,6 @@ export const About = () => {
             in this industry. It provides flexibility and the opportunity to spend more time with my family, who do not live in Stockholm.`}
           </p>
           <AutoPlaySlideshow></AutoPlaySlideshow>
-
         </div>
         </div>
       </div>
