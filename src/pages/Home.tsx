@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import "../styles/Home.css";
 import { LanguageContext } from "../context/LanguageContext";
-import { Portfolio } from "./Portfolio";
+import { PortfolioPage } from "./PortfolioPage";
 import { InteractiveMenu } from "../components/InteractiveMenu";
 import { About } from "./About";
 import { Contact } from "./Contact";
@@ -49,7 +49,7 @@ export const Home = () => {
           </div>
           <InteractiveMenu></InteractiveMenu>
           <section className="port-center-pos">
-          <Portfolio></Portfolio>
+          <PortfolioPage></PortfolioPage>
           </section>
           <section className="about-center-pos">
             <About>

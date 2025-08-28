@@ -31,7 +31,7 @@ export const Modal = () => {
                 </NavLink>
               </li>
               <li className="link-style">
-                <NavLink id="link-decor" to="/Portfolio" onClick={closeModal}>
+                <NavLink id="link-decor" to="/PortfolioPage" onClick={closeModal}>
                   {type === "sv" ? "Min Portfolio" : "My Portfolio"}
                 </NavLink>
               </li>
