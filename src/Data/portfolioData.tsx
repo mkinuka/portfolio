@@ -140,7 +140,7 @@ export const portfolioItems: PortfolioItemLangType[] = [
   {
     sv: {
       id: 3,
-      title: <a href="">Första HTML/CSS-projektet</a>,
+      title: "Första HTML/CSS-projektet",
       imgUrl: [
         firstHtmlProject,
         firstHtmlProject2,
@@ -161,7 +161,7 @@ export const portfolioItems: PortfolioItemLangType[] = [
     },
     eng: {
       id: 3,
-      title: <a href="">The First HTML/CSS Project</a>,
+      title: "The First HTML/CSS Project",
       imgUrl: [
         firstHtmlProject5,
         firstHtmlProject4,
