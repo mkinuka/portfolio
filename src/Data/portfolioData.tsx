@@ -18,7 +18,7 @@ export const portfolioItems: PortfolioItemLangType[] = [
   {
     sv: {
       id: 1,
-      title: "Auktionsprojektet",
+      title: <a href="https://github.com/mkinuka/Auction-project.git">Auktionsprojektet</a>,
       imgUrl: [auctionImg, auctionImg2],
       description: (
         <>
@@ -49,7 +49,7 @@ export const portfolioItems: PortfolioItemLangType[] = [
     },
     eng: {
       id: 1,
-      title: "The Auction Project",
+      title: <a href="https://github.com/mkinuka/Auction-project.git">The Auction Project</a>,
       imgUrl: [auctionImg, auctionImg2],
       description: (
         <>
@@ -84,7 +84,7 @@ export const portfolioItems: PortfolioItemLangType[] = [
   {
     sv: {
       id: 2,
-      title: "Webbshopprojektet",
+      title: <a href="https://github.com/mkinuka/Webshop.git">Webbshopprojektet</a>,
       imgUrl: [webShopImg, webShopImg2, webShopImg3],
       description: (
         <>
@@ -111,7 +111,7 @@ export const portfolioItems: PortfolioItemLangType[] = [
     },
     eng: {
       id: 2,
-      title: "The Webshop Project",
+      title: <a href="https://github.com/mkinuka/Webshop.git">The Webshop Project</a>,
       imgUrl: [webShopImg, webShopImg2, webShopImg3],
       description: (
         <>
@@ -140,7 +140,7 @@ export const portfolioItems: PortfolioItemLangType[] = [
   {
     sv: {
       id: 3,
-      title: "Första HTML/CSS-projektet",
+      title: <a href="">Första HTML/CSS-projektet</a>,
       imgUrl: [
         firstHtmlProject,
         firstHtmlProject2,
@@ -161,7 +161,7 @@ export const portfolioItems: PortfolioItemLangType[] = [
     },
     eng: {
       id: 3,
-      title: "The First HTML/CSS Project",
+      title: <a href="">The First HTML/CSS Project</a>,
       imgUrl: [
         firstHtmlProject5,
         firstHtmlProject4,
@@ -184,7 +184,7 @@ export const portfolioItems: PortfolioItemLangType[] = [
   {
     sv: {
       id: 4,
-      title: "Andra HTML/CSS-projektet - Portfolioprojekt",
+      title: <a href="https://github.com/mkinuka/uppgift_2.git">Andra HTML/CSS-projektet - Portfolioprojekt</a>,
       imgUrl: [portfolio1, portfolio2, portfolio3],
       description: (
         <>
@@ -199,7 +199,7 @@ export const portfolioItems: PortfolioItemLangType[] = [
     },
     eng: {
       id: 4,
-      title: "The Second HTML/CSS Project - Portfolio Project",
+      title: <a href="https://github.com/mkinuka/uppgift_2.git">The Second HTML/CSS Project - Portfolio Project</a>,
       imgUrl: [portfolio1, portfolio2, portfolio3],
       description: (
         <>
