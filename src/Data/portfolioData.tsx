@@ -13,6 +13,13 @@ import firstHtmlProject5 from "../assets/third/mobile3.png";
 import portfolio1 from "../assets/forth/first-portfolio.png";
 import portfolio2 from "../assets/forth/first-portfolio2.png";
 import portfolio3 from "../assets/forth/first-portfolio3.png";
+import animalApi from "../assets/fifth/1.png"
+import animalApi2 from "../assets/fifth/2.png"
+import animalApi3 from "../assets/fifth/3.png"
+import animalApi4 from "../assets/fifth/4.png"
+
+
+
 
 export const portfolioItems: PortfolioItemLangType[] = [
   {
@@ -181,6 +188,7 @@ export const portfolioItems: PortfolioItemLangType[] = [
       ),
     },
   },
+  // 4th //
   {
     sv: {
       id: 4,
@@ -213,4 +221,53 @@ export const portfolioItems: PortfolioItemLangType[] = [
       ),
     },
   },
+  // 5th //
+  {
+    sv: {
+      id: 4,
+      title: <a href="https://github.com/mkinuka/fed24s-the-zoo-mkinuka.git">The Zoo</a>,
+      imgUrl: [animalApi, animalApi2, animalApi3, animalApi4],
+      description: (
+        <>
+          <p>I det här projektet byggde jag en webbapplikation för ett zoo där användaren 
+            kan utforska olika djur, läsa mer detaljerad information och mata dem utifrån ett tidsbaserat system. 
+            Applikationen är uppbyggd med React och använder React Router för att hantera startsidan, 
+            översiktssidan och djurens egna detaljsidor. 
+            <br></br><br></br>
+            Datan hämtas från ett externt API och hanteras med hjälp av Context och Reducer 
+            för att hålla koll på djurens status. På översiktssidan kan man se om djuren är mätta, 
+            snart behöver mat eller om de är hungriga. När man går in på ett enskilt djur presenteras mer information 
+            och man kan mata djuret, men knappen styrs av regler för hur lång tid som gått sedan senaste matning. 
+            <br></br><br></br>
+            För styling använde jag Tailwind CSS för att bygga en responsiv 
+            och tydlig design, och jag hanterade trasiga bildlänkar genom att visa en 
+            fallback-bild. Projektet gav mig en bra förståelse för hur man kombinerar API-hämtning, 
+            state management och routing i en mer komplett applikation.
+            </p>
+        </>
+      ),
+    },
+    eng: {
+      id: 4,
+      title: <a href="https://github.com/mkinuka/fed24s-the-zoo-mkinuka.git">The Zoo</a>,
+      imgUrl: [animalApi, animalApi2, animalApi3, animalApi4],
+      description: (
+        <>
+          <p>In this project, I built a web application for a zoo where users can explore different animals, 
+          read detailed information, and feed them based on a time-based system. The application is built with React and 
+          uses React Router to manage the homepage, the overview page, and individual animal detail pages.
+          <br></br><br></br>
+          The data is fetched from an external API and managed using Context and Reducer to keep track of 
+          the animals’ status. On the overview page, users can see if the animals are full, soon need food, or are hungry. 
+          On the detail page, more information about the animal is displayed, and the feeding button follows specific 
+          rules depending on how much time has passed since the last feeding.
+          <br></br><br></br>
+          For styling, I used Tailwind CSS to create a responsive and clean design, and I handled broken image 
+          links by showing a fallback image. This project gave me a solid understanding of how to combine 
+          API fetching, state management, and routing in a complete application.
+          </p>
+        </>
+      ),
+    },
+  }
 ];

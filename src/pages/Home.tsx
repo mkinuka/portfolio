@@ -51,10 +51,7 @@ export const Home = () => {
           <section className="port-center-pos">
           <PortfolioPage></PortfolioPage>
           </section>
-          <section className="about-center-pos">
-            <About>
-            </About>
-          </section>
+            <About></About>
           <section className="contact-center-pos">
             <Contact></Contact>
           </section>
