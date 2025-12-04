@@ -39,13 +39,13 @@ export const Home = () => {
                 </div>
               </section>
             </div>
-            <div className="arrow-container">
+            {/* <div className="arrow-container">
                 <a href="#browse-section">
                   <h3 className="arrow-container">
                     <i className="arrow down"></i>
                   </h3>
                 </a>
-            </div>  
+            </div>   */}
           </div>
           <InteractiveMenu></InteractiveMenu>
           <section className="port-center-pos">

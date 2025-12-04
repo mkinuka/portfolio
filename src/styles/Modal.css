@@ -44,6 +44,10 @@
     width: 20rem;
 }
 
+.homeIcon {
+    padding-right: 2px;
+}
+
 #list-style {
     list-style: none;
     display: flex;
@@ -61,21 +65,24 @@
     justify-content: center;
     align-items: center;
     padding: 0.5rem;
-    width: 8rem;
+    width: 10rem;
     height: 3.2rem;
     border-radius: 15px;
     z-index: 10;
+    background-color: black;
+    
 }
 
 .link-style:hover{
     background-color:#1a70bb ;
-    color: rgb(34, 31, 31);
     transition: 0.2s ease-in;
 }
 
 #link-decor {
     text-decoration: none;
     font-size: 1.5rem;
+    margin-left: 5px;
+    color: white;
 }
 
 #close-modal {

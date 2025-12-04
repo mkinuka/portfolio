@@ -30,8 +30,10 @@
 
 .form-container {
     width: 60vw;
+    height: fit-content;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .info-container {

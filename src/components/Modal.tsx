@@ -2,6 +2,7 @@ import { useState, useContext } from "react";
 import { NavLink } from "react-router";
 import "../styles/Modal.css"
 import { LanguageContext } from "../context/LanguageContext";
+import { House } from "lucide-react";
 
 export const Modal = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,6 +27,7 @@ export const Modal = () => {
           <div className="modal-container">
             <ul id="list-style">
               <li className="link-style">
+                <House color="" />
                 <NavLink id="link-decor" to="/" onClick={closeModal}>
                   {type === "sv" ? "Hem" : "Home"}
                 </NavLink>

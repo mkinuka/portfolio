@@ -10,6 +10,15 @@ export const PortfolioPage = () => {
     <>
       <article id="main-container">
         <h1 id="main-headiing">{type === "sv" ? "Projekt" : "Projects"}</h1>
+          <a
+          className="cv-download"
+          href={`${import.meta.env.BASE_URL}cv.pdf`}
+          download
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {type === "sv" ? "Ladda ner CV" : "Download CV"}
+        </a>
         <section id="portfolio-section">
           {portfolioItems.map((p) => (
             <div className="portfolio-container" key={p[type].id}>
@@ -23,12 +32,6 @@ export const PortfolioPage = () => {
             </div>
           ))}
         </section>
-        <h1>Resumé</h1>
-        <object
-           data={`${import.meta.env.BASE_URL}cv.pdf`}
-          type="application/pdf"
-          id="cv-pdf"
-        ></object>
       </article>
     </>
   );

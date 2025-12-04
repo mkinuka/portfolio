@@ -151,7 +151,7 @@ main {
   height: auto;
   margin: 0;
   border-radius: 10% 10% 30% 32%;
-  background-color: rgba(101, 2, 126, 0.2);
+  /* background-color: rgba(101, 2, 126, 0.2); */
   filter: drop-shadow(0 0 10px #65027e4d) drop-shadow(0 0 30px #8b30e1);
   padding: 25px;
   margin-right: 4rem;

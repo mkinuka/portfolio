@@ -18,10 +18,10 @@ export const Navigation = () => {
           {type === "sv" ? <span id="flag1" className="fi fi-us"></span> : <span id="flag2" className="fi fi-se"></span>}
         </button>
       </div>
-      <div className="menu-nav">
+      {/* <div className="menu-nav">
         <img></img>
         <Modal />
-      </div>
+      </div> */}
       </nav>
     </>
   );

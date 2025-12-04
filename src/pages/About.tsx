@@ -8,8 +8,7 @@ export const About = () => {
 
   return (
     <>
-      <div id="about-container">
-        <div className="center-pos-about">
+        <section className="center-pos-about">
         <div className="text-container">
           <h3 className="about-heading">{type === "sv" ? "Om mig" : "About me"}</h3>
             {type === "sv" ? (
@@ -107,8 +106,7 @@ export const About = () => {
           </p>
           <AutoPlaySlideshow></AutoPlaySlideshow>
         </div>
-        </div>
-      </div>
+        </section>
     </>
   );
 };
