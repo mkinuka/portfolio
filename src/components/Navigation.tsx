@@ -1,6 +1,5 @@
 // import "../styles/Navigation.css";
 import { useContext } from "react";
-import { Modal } from "../components/Modal";
 import { LanguageContext } from "../context/LanguageContext";
 import "../styles/navigation.css"
 import "flag-icons/css/flag-icons.min.css";
@@ -18,10 +17,6 @@ export const Navigation = () => {
           {type === "sv" ? <span id="flag1" className="fi fi-us"></span> : <span id="flag2" className="fi fi-se"></span>}
         </button>
       </div>
-      {/* <div className="menu-nav">
-        <img></img>
-        <Modal />
-      </div> */}
       </nav>
     </>
   );
