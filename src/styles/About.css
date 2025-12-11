@@ -6,11 +6,15 @@
     height: 100vh;
     margin-bottom: 20rem;
     margin-top: 3rem;
+    margin-bottom: 20vh;
 }
 
 .center-pos-about {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    margin-bottom: 30vh;
+
 }
 
 .heading-img-container{
