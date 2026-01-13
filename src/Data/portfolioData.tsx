@@ -224,7 +224,7 @@ export const portfolioItems: PortfolioItemLangType[] = [
   // 5th //
   {
     sv: {
-      id: 4,
+      id: 5,
       title: <a href="https://github.com/mkinuka/fed24s-the-zoo-mkinuka.git">The Zoo</a>,
       imgUrl: [animalApi, animalApi2, animalApi3, animalApi4],
       description: (
@@ -248,7 +248,7 @@ export const portfolioItems: PortfolioItemLangType[] = [
       ),
     },
     eng: {
-      id: 4,
+      id: 5,
       title: <a href="https://github.com/mkinuka/fed24s-the-zoo-mkinuka.git">The Zoo</a>,
       imgUrl: [animalApi, animalApi2, animalApi3, animalApi4],
       description: (

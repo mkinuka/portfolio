@@ -1,10 +1,23 @@
 import "../styles/Portfolio.css";
 import { portfolioItems } from "../Data/portfolioData";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { LanguageContext } from "../context/LanguageContext";
 
 export const PortfolioPage = () => {
   const { type } = useContext(LanguageContext);
+  const [expandedItems, setExpandedItems] = useState<Set<number>>(new Set());
+
+  const toggleExpanded = (id: number) => {
+    setExpandedItems(prev => {
+      const newSet = new Set(prev);
+      if (newSet.has(id)) {
+        newSet.delete(id);
+      } else {
+        newSet.add(id);
+      }
+      return newSet;
+    });
+  };
 
   return (
     <>
@@ -20,17 +33,35 @@ export const PortfolioPage = () => {
           {type === "sv" ? "Ladda ner CV" : "Download CV"}
         </a>
         <section id="portfolio-section">
-          {portfolioItems.map((p) => (
-            <div className="portfolio-container" key={p[type].id}>
-              <h2 className="portfolio-heading">{p[type].title}</h2>
-              <div className="image-container">
-                {p[type].imgUrl.map((i, idx) => (
-                  <img key={idx} src={i} className="portfolio-img" />
-                ))}
+          {portfolioItems.map((p) => {
+            const isExpanded = expandedItems.has(p[type].id);
+            return (
+              <div className="portfolio-container" key={p[type].id}>
+                <h2 className="portfolio-heading">{p[type].title}</h2>
+                {!isExpanded && (
+                  <div className="image-container">
+                    {p[type].imgUrl.map((i, idx) => (
+                      <img key={idx} src={i} className="portfolio-img" />
+                    ))}
+                  </div>
+                )}
+                <div className="text-wrapper">
+                  <p className={`portfolio-text-style ${isExpanded ? 'expanded' : ''}`}>
+                    {p[type].description}
+                  </p>
+                  <button 
+                    className="show-more-btn" 
+                    onClick={() => toggleExpanded(p[type].id)}
+                  >
+                    {isExpanded 
+                      ? (type === "sv" ? "Visa mindre" : "Show less")
+                      : (type === "sv" ? "Visa mer" : "Show more")
+                    }
+                  </button>
+                </div>
               </div>
-              <p className="portfolio-text-style">{p[type].description}</p>
-            </div>
-          ))}
+            );
+          })}
         </section>
       </article>
     </>
