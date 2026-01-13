@@ -61,7 +61,7 @@ export const PortfolioPage = () => {
               <div 
                 className="portfolio-container" 
                 key={p[type].id}
-                ref={(el) => (containerRefs.current[index] = el)}
+                ref={(el) => { containerRefs.current[index] = el; }}
               >
                 <h2 className="portfolio-heading">{p[type].title}</h2>
                 {!isExpanded && (
