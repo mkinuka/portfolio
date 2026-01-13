@@ -1,11 +1,33 @@
 import "../styles/Portfolio.css";
 import { portfolioItems } from "../Data/portfolioData";
-import { useContext, useState } from "react";
+import { useContext, useState, useEffect, useRef } from "react";
 import { LanguageContext } from "../context/LanguageContext";
 
 export const PortfolioPage = () => {
   const { type } = useContext(LanguageContext);
   const [expandedItems, setExpandedItems] = useState<Set<number>>(new Set());
+  const containerRefs = useRef<(HTMLDivElement | null)[]>([]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          } else {
+            entry.target.classList.remove('visible');
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    containerRefs.current.forEach((ref) => {
+      if (ref) observer.observe(ref);
+    });
+
+    return () => observer.disconnect();
+  }, []);
 
   const toggleExpanded = (id: number) => {
     setExpandedItems(prev => {
@@ -33,10 +55,14 @@ export const PortfolioPage = () => {
           {type === "sv" ? "Ladda ner CV" : "Download CV"}
         </a>
         <section id="portfolio-section">
-          {portfolioItems.map((p) => {
+          {portfolioItems.map((p, index) => {
             const isExpanded = expandedItems.has(p[type].id);
             return (
-              <div className="portfolio-container" key={p[type].id}>
+              <div 
+                className="portfolio-container" 
+                key={p[type].id}
+                ref={(el) => (containerRefs.current[index] = el)}
+              >
                 <h2 className="portfolio-heading">{p[type].title}</h2>
                 {!isExpanded && (
                   <div className="image-container">
@@ -46,9 +72,9 @@ export const PortfolioPage = () => {
                   </div>
                 )}
                 <div className="text-wrapper">
-                  <p className={`portfolio-text-style ${isExpanded ? 'expanded' : ''}`}>
+                  <div className={`portfolio-text-style ${isExpanded ? 'expanded' : ''}`}>
                     {p[type].description}
-                  </p>
+                  </div>
                   <button 
                     className="show-more-btn" 
                     onClick={() => toggleExpanded(p[type].id)}
