@@ -17,7 +17,10 @@ import animalApi from "../assets/fifth/1.png"
 import animalApi2 from "../assets/fifth/2.png"
 import animalApi3 from "../assets/fifth/3.png"
 import animalApi4 from "../assets/fifth/4.png"
-
+import greensteps from "../assets/sixth/greensteps.png"
+import greensteps2 from "../assets/sixth/greensteps2.png"
+import greensteps3 from "../assets/sixth/greensteps3.png"
+import greensteps4 from "../assets/sixth/greensteps4.png"
 
 
 
@@ -269,5 +272,37 @@ export const portfolioItems: PortfolioItemLangType[] = [
         </>
       ),
     },
+  },
+  // 6th
+  {
+    sv: {
+      id:6,
+      title: <a href="https://github.com/mkinuka/Greensteps.git">Greensteps</a>,
+      imgUrl: [greensteps,greensteps2,greensteps3,greensteps4],
+      description: (
+        <>
+        <p><b>GreenSteps</b> är en hållbarhetsapp som hjälper användare att förstå och minska sitt dagliga klimatavtryck. Appen gör komplex miljödata lättillgänglig genom att visa hur vardagliga val inom till exempel mat, transporter och konsumtion påverkar utsläppen av koldioxid.</p>
+        <br></br>
+        <p>Genom att registrera vad man äter, hur man reser eller vad man handlar kan GreenSteps uppskatta tillhörande CO₂-utsläpp baserat på tillförlitlig och forskningsbaserad data. Fokus ligger inte på exakta siffror, utan på att skapa medvetenhet och ge en tydlig bild av vilka val som har störst påverkan.</p>
+        <br></br>
+        <p>GreenSteps är inte utformad för att skuldbelägga användaren, utan för att uppmuntra till små, realistiska förbättringar över tid. Med visuella översikter, jämförelser och konkreta tips gör appen det enklare att ta mer hållbara beslut i vardagen. Målet med GreenSteps är att göra klimatpåverkan synlig, begriplig och hanterbar, ett steg i taget.</p>
+        </>
+      )
+    },
+    eng: {
+      id: 6,
+      title: <a href="https://github.com/mkinuka/Greensteps.git">Greensteps</a>,
+      imgUrl: [greensteps,greensteps2,greensteps3,greensteps4],
+      description: (
+        <>
+        <p><b>GreenSteps</b> is a sustainability app designed to help users understand and reduce their everyday carbon footprint. The app turns complex environmental data into clear, practical insights by showing how daily choices such as: food, transportation, and consumption affect CO₂ emissions.</p>
+        <br></br>
+        <p>By logging what you eat, how you travel, or what you buy, GreenSteps estimates the associated emissions using reliable, research-based data. Rather than focusing on absolute precision, the app aims to build awareness and highlight which actions have the greatest environmental impact.</p>
+        <br></br>
+        <p>GreenSteps is not about guilt or perfection. It is built to encourage gradual, realistic improvements over time. Through visual summaries, comparisons, and actionable tips, the app supports users in making more sustainable decisions in their daily lives. The goal of GreenSteps is to make climate impact visible, understandable, and manageable one step at a time.</p>
+        </>
+      )
+    }
+
   }
 ];
