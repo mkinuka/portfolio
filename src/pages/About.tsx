@@ -53,31 +53,19 @@ export const About = () => {
           <div className="w-[40vw] flex justify-start flex-col text-sm pl-12 pt-0 text-left leading-[1.7] max-[1200px]:w-[90vw] max-[1200px]:pl-0">
             <h3 className="max-[600px]:text-[18px] text-[1.5rem] pb-2">{type === "sv" ? "Hur började min resa?" : "How did my journey begin?"}</h3>
             <p className="mb-2">
-              {type === "sv" ? `Under många år har jag jobbat med yrken som både känts enformiga och monotona. Jag har alltid 
-              jobbat på med något som har varit väldigt fysiskt och inte gav mig utlopp för min mentala och kreativa 
-              sida. Jag kände hela tiden att jag satt fast och inte hade möjlighet att gå vidare. Jag längtade 
-              ofta tillbaka till dagarna då jag jobbade i restaurangbranschen där man fick både interagera med människor, 
-              likaså använda sin kreativa sida och skapa recept, planera och organisera.
-              År 2022–2023 försökte jag därför ändra på detta, just då hade jag ingen konkret 
-              plan på vad jag ville göra och i stället började läsa upp mina betyg för att eventuellt öppna dörren 
-              till en högre utbildning. Mina intressen har alltid varit naturvetenskap men detta är något som jag nödvändigtvis inte vill arbeta 
-              med då jag har en stark tro att arbeta mina intressen kan också försumma dem för mig. 
-              Därför kollade jag tillbaka till mina gymnasiedagar där jag först stötte på programmering och kodning, 
-              då hade jag bara skrapat på ytan av en värld som var mycket större än vad jag någonsin trott. 
-              Nu har jag påbörjat mitt andra år på medieinstitutet som frontend utvecklare och kunde inte vara mer nöjd med 
-              både utbildningen och min personliga utveckling under den här korta tiden. Nu ser jag därför fram emot att få testa mina färdigheter ute i det riktiga arbetslivet.`
+              {type === "sv" ? `År 2022–2023 bestämde jag mig för att förändra min situation. Jag började med att läsa upp mina betyg för att öppna dörren till en högre utbildning. 
+              Mina intressen har alltid legat inom naturvetenskap, men jag insåg tidigt att göra ett intresse till ett yrke kan ta bort glädjen med det. 
+              Istället tittade jag tillbaka på gymnasietiden då jag först stötte på programmering — då hade jag bara skrapat på ytan av en värld 
+              som visade sig vara mycket större än jag någonsin anat. 
+              Nu är jag inne på mitt andra år på Medieinstitutet som frontendutvecklare och kunde inte vara mer nöjd med 
+              både utbildningen och min personliga utveckling. Jag ser fram emot att testa mina färdigheter i det riktiga arbetslivet.`
               :
-              `For many years I worked in jobs that often felt repetitive and monotonous. The work was always very physical 
-              and rarely gave me the chance to express my creative or mental side. I constantly felt stuck, without a clear 
-              path forward. I often found myself longing back to the days when I worked in the restaurant industry, where I 
-              could interact with people, use my creativity, create recipes, plan, and organize.
-              In 2022–2023 I decided it was time for a change. At that point I didn't have a clear plan, so I started by 
-              improving my grades to open up opportunities for higher education. I looked back and asked myself what I truly 
-              wanted to do. Nature and science have always been big interests of mine, but I realized that turning a passion into 
-              work can sometimes take away the joy from it. Instead, I thought back to my high school years when I was first introduced 
-              to programming. Back then I had only scratched the surface of a world that turned out to be much bigger than I could ever imagine.
+              `In 2022–2023 I decided it was time for a change. I started by improving my grades to open up opportunities for higher education. 
+              Nature and science have always been big interests of mine, but I realized early on that turning a passion into work can sometimes take away the joy from it. 
+              Instead, I looked back to my high school years when I was first introduced to programming — back then I had only scratched the surface 
+              of a world that turned out to be far bigger than I ever imagined.
               Now I am in my second year at Medieinstitutet as a frontend developer, and I couldn't be happier with both the education 
-              itself and the personal growth I have experienced in such a short time. I am now looking forward to testing my skills in the real working world.`}
+              and the personal growth I've experienced. I'm looking forward to bringing my skills into the real working world.`}
             </p>
             <h3 className="max-[600px]:text-[18px] text-[1.5rem] pb-2">{type === "sv" ? "Varför frontend utveckling?" : "Why frontend development?"}</h3>
             <p>

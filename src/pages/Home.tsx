@@ -16,8 +16,8 @@ export const Home = () => {
     <>
       <div className="relative w-full overflow-hidden flex justify-center" onMouseMove={onMouseHandler}>
         <div className="home-gradient-bg"></div>
-        <div className="w-[90vw] mt-8 mb-40">
-          <div className="min-h-[100vh] mb-40 flex flex-col items-center justify-evenly py-16">
+        <div className="w-[90vw] mb-30">
+          <div className="min-h-[100vh] mb-40 flex flex-col items-center min-[2100px]:justify-evenly">
             <div className="flex justify-row justify-start w-full">
             <div className="flex flex-col justify-start">
             <h1 className="font-bold text-[5rem] text-start w-full max-[1000px]:text-[3rem]">Moses Kinuka</h1>
