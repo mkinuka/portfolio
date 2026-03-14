@@ -5,7 +5,7 @@ import { Link } from "react-router";
 
 export const PortfolioPage = () => {
   const { type } = useContext(LanguageContext);
-  const containerRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const containerRefs = useRef<(HTMLAnchorElement | null)[]>([]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
