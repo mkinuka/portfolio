@@ -1,10 +1,17 @@
+@import "tailwindcss";
+
 :root {
-  font-family: Grandslang-roman, sans-serif, system-ui;
+  font-family: 'Inter', sans-serif;
   line-height: 1.5;
   font-weight: 400;
   color-scheme: light dark;
   background-color: #171123;
   scroll-behavior: smooth;
+  letter-spacing: 0.03rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Grandslang-roman, sans-serif;
   letter-spacing: 0.1rem;
 }
 
@@ -16,4 +23,79 @@ body{
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+
+/* Home page dynamic gradient background */
+.home-gradient-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 200vh;
+  width: 100vw;
+  background-image: radial-gradient(
+    circle at var(--x, 50%) var(--y, 50%),
+    rgba(2, 255, 255, 0.2),
+    transparent 20%
+  );
+  background-size: cover;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Portfolio card scroll-in animation */
+.portfolio-card-link {
+  opacity: 0;
+  transform: translateX(6rem);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out, box-shadow 0.3s ease;
+}
+.portfolio-card-link.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+.portfolio-card-link.visible:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(142, 3, 255, 0.55);
+}
+
+
+
+
+/* Cursor */
+.cursor{
+    position: relative;
+    /* width: 24em; */
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 2rem;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    color: aquamarine;
+    transform: translateY(-50%);    
+}
+
+@media (max-width: 1000px) {
+  .cursor {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .cursor {
+    font-size: 0.9rem;
+  }
+}
+/* Animation */
+.typewriter-animation {
+  animation: 
+    typewriter 3s steps(50) 1s 1 normal both, 
+    blinkingCursor 500ms steps(50) infinite normal;
+}
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+@keyframes blinkingCursor{
+  from { border-right-color: rgba(255,255,255,.75); }
+  to { border-right-color: transparent; }
 }

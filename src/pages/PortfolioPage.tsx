@@ -1,11 +1,10 @@
-import "../styles/Portfolio.css";
 import { portfolioItems } from "../Data/portfolioData";
-import { useContext, useState, useEffect, useRef } from "react";
+import { useContext, useEffect, useRef } from "react";
 import { LanguageContext } from "../context/LanguageContext";
+import { Link } from "react-router";
 
 export const PortfolioPage = () => {
   const { type } = useContext(LanguageContext);
-  const [expandedItems, setExpandedItems] = useState<Set<number>>(new Set());
   const containerRefs = useRef<(HTMLDivElement | null)[]>([]);
 
   useEffect(() => {
@@ -29,67 +28,54 @@ export const PortfolioPage = () => {
     return () => observer.disconnect();
   }, []);
 
-  const toggleExpanded = (id: number) => {
-    setExpandedItems(prev => {
-      const newSet = new Set(prev);
-      if (newSet.has(id)) {
-        newSet.delete(id);
-      } else {
-        newSet.add(id);
-      }
-      return newSet;
-    });
-  };
-
   return (
-    <>
-      <article id="main-container">
-        <h1 id="main-headiing">{type === "sv" ? "Projekt" : "Projects"}</h1>
-          <a
-          className="cv-download"
-          href={`${import.meta.env.BASE_URL}cv.pdf`}
-          download
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {type === "sv" ? "Ladda ner CV" : "Download CV"}
-        </a>
-        <section id="portfolio-section">
-          {portfolioItems.map((p, index) => {
-            const isExpanded = expandedItems.has(p[type].id);
-            return (
-              <div 
-                className="portfolio-container" 
-                key={p[type].id}
-                ref={(el) => { containerRefs.current[index] = el; }}
-              >
-                <h2 className="portfolio-heading">{p[type].title}</h2>
-                {!isExpanded && (
-                  <div className="image-container">
-                    {p[type].imgUrl.map((i, idx) => (
-                      <img key={idx} src={i} className="portfolio-img" />
-                    ))}
-                  </div>
-                )}
-                <div className="text-wrapper">
-                  <div className={`portfolio-text-style ${isExpanded ? 'expanded' : ''}`}>
-                    {p[type].description}
-                  </div>
-                  <button 
-                    className="show-more-btn" 
-                    onClick={() => toggleExpanded(p[type].id)}
-                  >
-                    {isExpanded 
-                      ? (type === "sv" ? "Visa mindre" : "Show less")
-                      : (type === "sv" ? "Visa mer" : "Show more")
-                    }
-                  </button>
+    <article  id="navigate-port" className=" w-[90vw] flex flex-col items-center mb-[20vh]">
+      <h1 className="text-white text-4xl font-bold mb-4" id="main-headiing">
+        {type === "sv" ? "Projekt" : "Projects"}
+      </h1>
+      <a
+        className="inline-block mb-12 px-4 py-2 rounded-lg font-semibold bg-white text-gray-900 no-underline hover:bg-[#331970] hover:text-gray-200 transition-colors duration-200"
+        href={`${import.meta.env.BASE_URL}cv.pdf`}
+        download
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {type === "sv" ? "Ladda ner CV" : "Download CV"}
+      </a>
+
+      {/* <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10"> */}
+        <section className="flex flex-wrap gap-10 justify-center">
+        {portfolioItems.map((p, index) => (
+          <div key={p[type].id} className="flex flex-col items-center">
+            <Link
+              to={`/portfolio/${p[type].id}`}
+              className="portfolio-card-link flex flex-col w-[350px] rounded-2xl overflow-hidden bg-purple-950/10 shadow-lg shadow-black/80 backdrop-blur-sm no-underline cursor-pointer"
+              ref={(el) => { containerRefs.current[index] = el; }}
+            >
+              <img
+                src={p[type].imgUrl[0]}
+                className="w-full h-[173px] object-cover"
+                alt=""
+              />
+              <div className="flex flex-col items-center px-3 py-3 gap-3">
+                <h2 className="text-white w-full text-sm text-left font-semibold text-center m-0">
+                  {p[type].title}
+                </h2>
+                <div className=" flex flex-row justify-start w-full">
+                {/* <div className="h-[1px] w-[5rem] bg-white"></div> */}
+                <div className="w-full h-px bg-gradient-to-r  via-[rgba(2,255,255,0.3)] to-transparent" />
+
                 </div>
+                <p className="text-purple-200/80 text-xs text-center text-left  mt-2 leading-relaxed px-1">
+                  {p[type].shortDescription}
+                </p>
               </div>
-            );
-          })}
-        </section>
-      </article>
-    </>
+            </Link>
+          </div>
+        ))}
+      </section>
+    </article>
   );
 };
+
+

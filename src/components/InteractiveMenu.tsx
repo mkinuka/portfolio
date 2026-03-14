@@ -41,7 +41,7 @@ export const InteractiveMenu = () => {
               <div className="the-back">
                 <img className="container-img-back" src={img4} alt="img of project"></img>
                 <div className="link-box-style">
-                <a className="project-links1" href="#main-container">{type === "sv" ? "Besök Mina projekt" : "Visit my Projects"}</a>
+                <a className="project-links1" href="#navigate-port">{type === "sv" ? "Besök Mina projekt" : "Visit my Projects"}</a>
                 </div>
               </div>
             </div>

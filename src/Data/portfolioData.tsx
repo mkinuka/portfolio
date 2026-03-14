@@ -28,8 +28,10 @@ export const portfolioItems: PortfolioItemLangType[] = [
   {
     sv: {
       id: 1,
-      title: <a href="https://github.com/mkinuka/Auction-project.git">Auktionsprojektet</a>,
+      title: "Auktionsprojektet",
+      githubUrl: "https://github.com/mkinuka/Auction-project.git",
       imgUrl: [auctionImg, auctionImg2],
+      shortDescription: "Fullstack auktionsplattform med realtidsbudgivning via Socket.IO, nedräkningstimer och säker inloggning med bcrypt.",
       description: (
         <>
           Jag byggde en dynamisk auktionsplattform med MongoDB, Express och
@@ -59,8 +61,10 @@ export const portfolioItems: PortfolioItemLangType[] = [
     },
     eng: {
       id: 1,
-      title: <a href="https://github.com/mkinuka/Auction-project.git">The Auction Project</a>,
+      title: "The Auction Project",
+      githubUrl: "https://github.com/mkinuka/Auction-project.git",
       imgUrl: [auctionImg, auctionImg2],
+      shortDescription: "Full-stack auction platform with real-time bidding via Socket.IO, live countdown timers, and secure login using bcrypt.",
       description: (
         <>
           I built a dynamic auction platform using MongoDB, Express, and
@@ -94,8 +98,10 @@ export const portfolioItems: PortfolioItemLangType[] = [
   {
     sv: {
       id: 2,
-      title: <a href="https://github.com/mkinuka/Webshop.git">Webbshopprojektet</a>,
+      title: "Webbshopprojektet",
+      githubUrl: "https://github.com/mkinuka/Webshop.git",
       imgUrl: [webShopImg, webShopImg2, webShopImg3],
+      shortDescription: "Modern webbshop i TypeScript med interaktiv kundvagn, LocalStorage-persistens och responsiv design.",
       description: (
         <>
           Detta är en modern webbshop byggd med TypeScript, med fokus på en ren
@@ -121,8 +127,10 @@ export const portfolioItems: PortfolioItemLangType[] = [
     },
     eng: {
       id: 2,
-      title: <a href="https://github.com/mkinuka/Webshop.git">The Webshop Project</a>,
+      title: "The Webshop Project",
+      githubUrl: "https://github.com/mkinuka/Webshop.git",
       imgUrl: [webShopImg, webShopImg2, webShopImg3],
+      shortDescription: "Modern TypeScript webshop with an interactive cart, LocalStorage persistence, and a clean responsive design.",
       description: (
         <>
           This is a modern webshop built with TypeScript, focused on a clean and
@@ -158,6 +166,7 @@ export const portfolioItems: PortfolioItemLangType[] = [
         firstHtmlProject4,
         firstHtmlProject5,
       ],
+      shortDescription: "Mitt första skolprojekt — en responsiv webbsida byggd med ren HTML & CSS med hamburgarmeny för mobil.",
       description: (
         <>
           Detta var mitt allra första skolprojekt, byggt helt med HTML och CSS.
@@ -179,6 +188,7 @@ export const portfolioItems: PortfolioItemLangType[] = [
         firstHtmlProject2,
         firstHtmlProject3,
       ],
+      shortDescription: "My first school project — a responsive site built with pure HTML & CSS including a hamburger menu for mobile.",
       description: (
         <>
           This was my very first school project, built entirely with HTML and
@@ -195,8 +205,10 @@ export const portfolioItems: PortfolioItemLangType[] = [
   {
     sv: {
       id: 4,
-      title: <a href="https://github.com/mkinuka/uppgift_2.git">Andra HTML/CSS-projektet - Portfolioprojekt</a>,
+      title: "Andra HTML/CSS-projektet - Portfolioprojekt",
+      githubUrl: "https://github.com/mkinuka/uppgift_2.git",
       imgUrl: [portfolio1, portfolio2, portfolio3],
+      shortDescription: "Mitt andra skolprojekt — en portfoliosida byggd med HTML & CSS från en Figma-design, med fokus på designfidelitet.",
       description: (
         <>
           Detta var mitt andra skolprojekt och min första portfoliosida, byggd
@@ -210,8 +222,10 @@ export const portfolioItems: PortfolioItemLangType[] = [
     },
     eng: {
       id: 4,
-      title: <a href="https://github.com/mkinuka/uppgift_2.git">The Second HTML/CSS Project - Portfolio Project</a>,
+      title: "The Second HTML/CSS Project - Portfolio Project",
+      githubUrl: "https://github.com/mkinuka/uppgift_2.git",
       imgUrl: [portfolio1, portfolio2, portfolio3],
+      shortDescription: "My second school project — a portfolio site built with HTML & CSS from a Figma design, focusing on design fidelity.",
       description: (
         <>
           This was my second school project and my first portfolio website,
@@ -228,8 +242,10 @@ export const portfolioItems: PortfolioItemLangType[] = [
   {
     sv: {
       id: 5,
-      title: <a href="https://github.com/mkinuka/fed24s-the-zoo-mkinuka.git">The Zoo</a>,
+      title: "The Zoo",
+      githubUrl: "https://github.com/mkinuka/fed24s-the-zoo-mkinuka.git",
       imgUrl: [animalApi, animalApi2, animalApi3, animalApi4],
+      shortDescription: "React-app för ett zoo med API-hämtning, Context/Reducer för state, React Router och tidsbaserat matningssystem.",
       description: (
         <>
           <p>I det här projektet byggde jag en webbapplikation för ett zoo där användaren 
@@ -252,8 +268,10 @@ export const portfolioItems: PortfolioItemLangType[] = [
     },
     eng: {
       id: 5,
-      title: <a href="https://github.com/mkinuka/fed24s-the-zoo-mkinuka.git">The Zoo</a>,
+      title: "The Zoo",
+      githubUrl: "https://github.com/mkinuka/fed24s-the-zoo-mkinuka.git",
       imgUrl: [animalApi, animalApi2, animalApi3, animalApi4],
+      shortDescription: "React zoo app with external API, Context/Reducer state management, React Router, and a time-based animal feeding system.",
       description: (
         <>
           <p>In this project, I built a web application for a zoo where users can explore different animals, 
@@ -277,8 +295,10 @@ export const portfolioItems: PortfolioItemLangType[] = [
   {
     sv: {
       id:6,
-      title: <a href="https://github.com/mkinuka/Greensteps.git">Greensteps</a>,
+      title: "Greensteps",
+      githubUrl: "https://github.com/mkinuka/Greensteps.git",
       imgUrl: [greensteps,greensteps2,greensteps3,greensteps4],
+      shortDescription: "Hållbarhetsapp som hjälper användare att förstå och minska sitt koldiox idavtryck med visuella översikter och tips.",
       description: (
         <>
         <p><b>GreenSteps</b> är en hållbarhetsapp som hjälper användare att förstå och minska sitt dagliga klimatavtryck. Appen gör komplex miljödata lättillgänglig genom att visa hur vardagliga val inom till exempel mat, transporter och konsumtion påverkar utsläppen av koldioxid.</p>
@@ -291,8 +311,10 @@ export const portfolioItems: PortfolioItemLangType[] = [
     },
     eng: {
       id: 6,
-      title: <a href="https://github.com/mkinuka/Greensteps.git">Greensteps</a>,
+      title: "Greensteps",
+      githubUrl: "https://github.com/mkinuka/Greensteps.git",
       imgUrl: [greensteps,greensteps2,greensteps3,greensteps4],
+      shortDescription: "Sustainability app that helps users understand and reduce their carbon footprint with visual insights and actionable tips.",
       description: (
         <>
         <p><b>GreenSteps</b> is a sustainability app designed to help users understand and reduce their everyday carbon footprint. The app turns complex environmental data into clear, practical insights by showing how daily choices such as: food, transportation, and consumption affect CO₂ emissions.</p>

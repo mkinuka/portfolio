@@ -1,10 +1,12 @@
-import type { JSX, ReactNode } from "react";
+import type { JSX } from "react";
 
 export type PortfolioItemType = {
   id: number;
-  title: ReactNode;
+  title: string;
+  githubUrl?: string;
   imgUrl: string[];
   description: JSX.Element;
+  shortDescription: string;
 };
 export type PortfolioArray = PortfolioItemLangType[];
 

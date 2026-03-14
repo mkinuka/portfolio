@@ -1,18 +1,17 @@
 #browse-section {
     width: 80vw;
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 3rem;
     position: relative;
-    margin-bottom: 30vh;
+    height: auto;
 }
 
 
   .project-cards {
-    height: 600px;
-    width: 20vw;
+    height: 480px;
+    width: 16vw;
     transition: all 1s  ease;
     perspective: 45em;
     border-radius: 15px;
@@ -69,7 +68,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
+  font-size: 1.3rem;
   }
 
    .the-back {
@@ -97,26 +97,30 @@
   
   .project-links1 {
     color: rgb(32, 32, 32);
-    padding: 0.5rem;
+    padding: 0.4rem;
     width: auto;
     height: auto;
     border-radius: 15px;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 2rem;
     background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
   }
 
   .project-links2 {
     color: rgb(32, 32, 32);
-    padding: 0.5rem;
+    padding: 0.4rem;
     width: auto;
     height: auto;
     border-radius: 15px;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     background-color: aliceblue;
-
   }
 
   .project-links2:hover{
@@ -133,31 +137,37 @@
 
   @media (max-width: 1200px) {
     #browse-section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        gap: 1.5rem;
+        margin-top: 3rem;
     }
-      .img-wrapper {
-    width:40vw;
-    height: auto;
-    display: flex;
-    animation: slide 10s infinite;
-  }
-  #browse-section {
-    width: 80vw;
-    height: 150vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 3rem;
-    position: relative;
-    perspective: 2000px;
-}
 
     .project-cards {
-        width: 40vw;
+        width: 22vw;
+        height: 360px;
     }
-    .img-slide {
-        width: 40vw;
+
+    .interactiv-header {
+        font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    #browse-section {
+        gap: 1rem;
+    }
+
+    .project-cards {
+        width: 26vw;
+        height: 280px;
+    }
+
+    .interactiv-header {
+        font-size: 0.8rem;
+    }
+
+    .project-links1,
+    .project-links2 {
+        font-size: 0.8rem;
+        padding: 0.3rem;
     }
   }
