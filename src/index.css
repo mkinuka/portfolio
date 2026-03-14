@@ -60,42 +60,71 @@ body{
 
 
 
-/* Cursor */
-.cursor{
-    position: relative;
-    /* width: 24em; */
-    margin: 0 auto;
-    border-right: 2px solid rgba(255,255,255,.75);
-    font-size: 2rem;
-    text-align: center;
-    white-space: nowrap;
-    overflow: hidden;
-    color: aquamarine;
-    transform: translateY(-50%);    
+/* Typewriter */
+.typewriter-wrap {
+  color: aquamarine;
+  font-size: 2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid rgba(255,255,255,.75);
+  animation:
+    typewriter 3s steps(56) 1s 1 normal both,
+    blinkingCursor 500ms steps(50) 1s infinite normal;
+}
+
+.tw-line1,
+.tw-line2 {
+  display: inline;
 }
 
 @media (max-width: 1000px) {
-  .cursor {
+  .typewriter-wrap {
     font-size: 1.3rem;
   }
 }
 
-@media (max-width: 500px) {
-  .cursor {
+/* Mobile only: two-line split animation */
+@media (max-width: 650px) {
+  .typewriter-wrap {
     font-size: 0.9rem;
+    white-space: normal;
+    overflow: visible;
+    border-right: none;
+    animation: none;
+  }
+  .tw-line1 {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid rgba(255,255,255,.75);
+    animation:
+      typewriter 2s steps(26) 0.5s 1 normal both,
+      blinkingCursor 500ms steps(50) 0.5s 4 normal,
+      hideElement 0s linear 2.5s 1 forwards;
+  }
+  .tw-line2 {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid transparent;
+    animation:
+      typewriter 2s steps(29) 2.5s 1 normal both,
+      showCursor 0s linear 2.5s 1 forwards,
+      blinkingCursor 500ms steps(50) 4.5s infinite normal;
   }
 }
-/* Animation */
-.typewriter-animation {
-  animation: 
-    typewriter 3s steps(50) 1s 1 normal both, 
-    blinkingCursor 500ms steps(50) infinite normal;
-}
+
 @keyframes typewriter {
   from { width: 0; }
   to { width: 100%; }
 }
-@keyframes blinkingCursor{
+@keyframes blinkingCursor {
   from { border-right-color: rgba(255,255,255,.75); }
+  to { border-right-color: transparent; }
+}
+@keyframes showCursor {
+  to { border-right-color: rgba(255,255,255,.75); }
+}
+@keyframes hideElement {
   to { border-right-color: transparent; }
 }
