@@ -17,8 +17,8 @@ export const Home = () => {
       <div className="relative w-full overflow-hidden flex justify-center" onMouseMove={onMouseHandler}>
         <div className="home-gradient-bg"></div>
         <div className="w-[90vw] mt-8 mb-40">
-          <div className="h-[100vh] mb-40 flex flex-col items-center">
-            <div className="flex justify-row mb-[10rem] justify-start w-full">
+          <div className="min-h-[100vh] mb-40 flex flex-col items-center justify-evenly py-16">
+            <div className="flex justify-row justify-start w-full">
             <div className="flex flex-col justify-start">
             <h1 className="font-bold text-[5rem] text-start w-full max-[1000px]:text-[3rem]">Moses Kinuka</h1>
             <h4 className="cursor typewriter-animation">Hejsan mitt namn är Moses, välkommen till min portfolio!</h4>
