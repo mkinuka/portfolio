@@ -1,16 +1,17 @@
 import { useParams, useNavigate } from "react-router";
 import { portfolioItems } from "../Data/portfolioData";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { LanguageContext } from "../context/LanguageContext";
 
 export const PortfolioDetail = () => {
   const { id } = useParams<{ id: string }>();
   const { type } = useContext(LanguageContext);
   const navigate = useNavigate();
-
+  const [activeImg, setActiveImg] = useState(0);  
   const portfolioItem = portfolioItems.find((item) => item[type].id === Number(id));
-
-  const [activeImg, setActiveImg] = useState(0);
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+  }, []);
 
   if (!portfolioItem) {
     return (

@@ -18,30 +18,29 @@ import {
   SiLinear,
   SiCanva,
   SiGithub,
-  SiBitbucket
+  SiBitbucket,
+  SiSupabase,
 } from "react-icons/si";
+import {  RiNextjsLine } from "react-icons/ri"
+// import NextjsIcon from "../components/NextjsIcon";
 import { TbBrandOffice } from "react-icons/tb";
+import type { TechCard } from "../types/techStack";
 
 const cardClass =
   "relative flex flex-col items-center justify-center gap-2 w-[100px] h-[100px] max-[768px]:w-[85px] max-[768px]:h-[90px] bg-white/[0.04] border border-white/[0.08] rounded-2xl px-3 py-4 transition-all duration-[250ms] ease-in-out cursor-default hover:bg-white/[0.08] hover:border-[rgba(2,255,255,0.35)] hover:-translate-y-1 hover:shadow-[0_8px_24px_rgba(2,255,255,0.15)]";
-
-type TechCard = {
-  name: string;
-  icon: React.ReactNode;
-  color: string;
-  level?: "beginner";
-};
-
+  
 const techStack: TechCard[] = [
   { name: "JavaScript", icon: <SiJavascript />, color: "#F7DF1E" },
   { name: "TypeScript", icon: <SiTypescript />, color: "#3178C6" },
   { name: "HTML5", icon: <SiHtml5 />, color: "#E34F26" },
   { name: "CSS3", icon: <SiCss3 />, color: "#1572B6" },
   { name: "React", icon: <SiReact />, color: "#61DAFB" },
+  { name: "Next.js", icon: <RiNextjsLine/>, color: "#fff" },
   { name: "Tailwind", icon: <SiTailwindcss />, color: "#06B6D4" },
   { name: "Node.js", icon: <SiNodedotjs />, color: "#339933" },
   { name: "Express", icon: <SiExpress />, color: "#ffffff" },
   { name: "MongoDB", icon: <SiMongodb />, color: "#47A248" },
+  { name: "Supabase", icon: <SiSupabase/>, color:"#34B27B" },
   { name: "Git", icon: <SiGit />, color: "#F05032" },
   { name: "PHP", icon: <SiPhp />, color: "#777BB4", level: "beginner" },
   { name: "WordPress", icon: <SiWordpress />, color: "#21759B", level: "beginner" },
