@@ -23,7 +23,7 @@ export const Home = () => {
         <div className="w-[90vw] mb-30">
           <div className="min-h-[100vh]  mb-40 flex flex-col items-end min-[2100px]:justify-evenly max-[600px]:items-evenly">
              <div className="flex flex-col justify-start w-full">
-            <h1 className="font-bold text-[5rem] text-start w-full max-[1000px]:text-[3rem]">Moses Kinuka</h1>
+            <h1 className="font-bold text-[5rem] text-start w-full max-[1000px]:text-[3rem] text-white">Moses Kinuka</h1>
              <div className="w-fit">
             <h4 className="typewriter-wrap">
               {type === "sv" ? (

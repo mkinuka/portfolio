@@ -40,8 +40,8 @@ const sendEmail = (e: React.FormEvent) => {
         <div className="w-[70vw] flex flex-row max-[1200px]:flex-col max-[1200px]:items-center text-lg p-4 mb-20 gap-8">
             <div className="w-[30vw] max-[1200px]:w-[60vw] mr-8 max-[1200px]:mr-0 max-[1200px]:mb-20 flex items-center flex-col">
                 <img src={picture} className="m-8 w-[15vw] max-[1200px]:w-[30vw]  rounded-xl" alt="Picture of me" />
-                <h3 className="text-start font-bold ">{type === "sv" ? "Kontakt" : "Contact"}</h3>
-                <p className="text-left"> {type === "sv" ? "Har du frågor, idéer eller funderingar? Tveka inte att höra av dig! Jag svarar gärna på allt som rör mina projekt, samarbeten eller frontend-utveckling i allmänhet. Fyll i formuläret så hör jag av mig så snart jag kan." 
+                <h3 className="text-start text-white font-bold ">{type === "sv" ? "Kontakt" : "Contact"}</h3>
+                <p className="text-left text-white"> {type === "sv" ? "Har du frågor, idéer eller funderingar? Tveka inte att höra av dig! Jag svarar gärna på allt som rör mina projekt, samarbeten eller frontend-utveckling i allmänhet. Fyll i formuläret så hör jag av mig så snart jag kan." 
                 : "Do you have any questions, ideas, or thoughts? Don't hesitate to get in touch! I'll be happy to answer anything related to my projects, collaborations, or frontend development in general. Fill out the form and I'll get back to you as soon as I can."}
                 </p>
                 <div className="flex flex-row justify-center gap-4 max-[1200px]:gap-8 w-full mt-6">
@@ -59,17 +59,17 @@ const sendEmail = (e: React.FormEvent) => {
             <div className="w-[30vw] max-[1200px]:w-[60vw] h-fit justify-center items-center rounded-2xl px-8 py-7 shadow-[0_4px_30px_rgba(0,0,0,0.8)] backdrop-blur-sm border border-white/30">
             {/* <h2>Har du frågor eller funderingar</h2> */}
                 <form className="flex flex-col w-full" ref={form} onSubmit={sendEmail}>
-                    <h2 className="font-semibold text-[2rem] mb-6 text-left">{type === "sv" ? "Kontakta mig" : "Contact me"}</h2>
+                    <h2 className="font-semibold text-[2rem] text-white mb-6 text-left">{type === "sv" ? "Kontakta mig" : "Contact me"}</h2>
                     <div className="flex flex-col mb-8">
-                        <label className="text-left" htmlFor="name">{type === "sv" ? "Namn" : "Name"}</label>
+                        <label className="text-left text-white" htmlFor="name">{type === "sv" ? "Namn" : "Name"}</label>
                         <input className="w-full bg-gray-600 rounded-xl p-2" type="text" id="name" name="name" placeholder={type === "sv" ? "Ditt namn" : "Your name"} required />
                     </div>
                     <div className="flex flex-col mb-8">
-                        <label className="text-left" htmlFor="email">Email</label>
+                        <label className="text-left text-white" htmlFor="email">Email</label>
                         <input className="w-full bg-gray-600 rounded-xl p-2" type="email" id="email" name="email" placeholder={type === "sv" ? "din@mail.se" : "your@mail.com"} required />
                     </div>
                     <div className="flex flex-col mb-8">
-                        <label className="text-left" htmlFor="message">{type === "sv" ? "Meddelande" : "Message"}</label>
+                        <label className="text-left text-white" htmlFor="message">{type === "sv" ? "Meddelande" : "Message"}</label>
                         <textarea className="h-40 bg-gray-600 rounded-xl p-2" id="message" name="message" placeholder={type === "sv" ? "Skriv ditt meddelande här..." : "Write your message here.."} required />
                     </div>
                     <button className="cursor-pointer text-gray-900 px-4 py-2 rounded-[15px] text-2xl bg-[aliceblue] border-0 hover:bg-[#331970] hover:text-gray-200 transition-colors duration-200" type="submit">

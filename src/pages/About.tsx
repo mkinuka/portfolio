@@ -10,9 +10,9 @@ export const About = () => {
       <section id="about-container">
         <section className="flex flex-row justify-center mb-[30vh] mt-[30vh]  max-[1600px]:items-center max-[1600px]:py-20 max-[1600px]:w-[90vw] max-[1600px]:gap-20 max-[1200px]:flex-col max-[1200px]:w-[90vw]">
           <div className="w-[40vw] flex flex-col text-lg px-12 pt-0 max-[1200px]:w-[90vw] max-[1200px]:px-0">
-            <h3 className="text-[100px] max-[600px]:text-[50px] m-0 text-left">{type === "sv" ? "Om mig" : "About me"}</h3>
+            <h3 className="text-[100px] text-white max-[600px]:text-[50px] m-0 text-left">{type === "sv" ? "Om mig" : "About me"}</h3>
             {type === "sv" ? (
-              <p className="text-left font-['Inter',sans-serif]">
+              <p className="text-left text-white font-['Inter',sans-serif]">
                 Mitt namn är Moses Kinuka och jag studerar just nu mitt andra år på
                 Medieinstitutet till frontendutvecklare. Efter en längre tid av att söka
                 efter något som verkligen motiverar mig arbetsmässigt känns det
@@ -31,7 +31,7 @@ export const About = () => {
                 att arbeta tillsammans med honom på restaurang. Att få lära mig yrket direkt från honom var ett privilegium och en erfarenhet jag alltid kommer bära med mig.
               </p>
             ) : (
-              <p className="text-left font-['Inter',sans-serif]">
+              <p className="text-left text-white font-['Inter',sans-serif]">
                 My name is Moses Kinuka and I am currently in my second year at Medieinstitutet, studying frontend development.
                 After a long time searching for something that truly motivates me professionally, it feels amazing to have found
                 the right path and to now be able to present myself in an environment I have built myself.
@@ -51,8 +51,8 @@ export const About = () => {
             )}
           </div>
           <div className="w-[40vw] flex justify-start flex-col text-sm pl-12 pt-0 text-left leading-[1.7] max-[1200px]:w-[90vw] max-[1200px]:pl-0">
-            <h3 className="max-[600px]:text-[18px] text-[1.5rem] pb-2">{type === "sv" ? "Hur började min resa?" : "How did my journey begin?"}</h3>
-            <p className="mb-2">
+            <h3 className="max-[600px]:text-[18px] text-white text-[1.5rem] pb-2">{type === "sv" ? "Hur började min resa?" : "How did my journey begin?"}</h3>
+            <p className="mb-2 text-white">
               {type === "sv" ? `År 2022–2023 bestämde jag mig för att förändra min situation. Jag började med att läsa upp mina betyg för att öppna dörren till en högre utbildning. 
               Mina intressen har alltid legat inom naturvetenskap, men jag insåg tidigt att göra ett intresse till ett yrke kan ta bort glädjen med det. 
               Istället tittade jag tillbaka på gymnasietiden då jag först stötte på programmering — då hade jag bara skrapat på ytan av en värld 
@@ -67,8 +67,8 @@ export const About = () => {
               Now I am in my second year at Medieinstitutet as a frontend developer, and I couldn't be happier with both the education 
               and the personal growth I've experienced. I'm looking forward to bringing my skills into the real working world.`}
             </p>
-            <h3 className="max-[600px]:text-[18px] text-[1.5rem] pb-2">{type === "sv" ? "Varför frontend utveckling?" : "Why frontend development?"}</h3>
-            <p>
+            <h3 className="max-[600px]:text-[18px] text-[1.5rem] text-white pb-2">{type === "sv" ? "Varför frontend utveckling?" : "Why frontend development?"}</h3>
+            <p className="text-white">
               {type === "sv" ? `Faktumet är att jag både sökte som frontend och backendutvecklare. Men efter att ha läst en hel del och hittat massa 
               information om skolor och olika utbildningar lockade alltid frontend delen mer. En utav anledningarna var tiden som vi hade att lära oss. 
               Jag kände då, men även nu att lära sig båda delarna under 2års tid kommer att vara en stor utmaning och att i stället 

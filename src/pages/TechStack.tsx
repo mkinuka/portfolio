@@ -62,7 +62,7 @@ export const TechStack = () => {
     <section className="min-h-[150vh] flex flex-col justify-center py-24 gap-24 max-[768px]:py-16 max-[768px]:gap-16">
       {/* Dev Stack */}
       <div className="flex flex-col items-start gap-8 w-full">
-        <h2 className="text-[clamp(3rem,6vw,6rem)] m-0 leading-none">Tech Stack</h2>
+        <h2 className="text-white text-[clamp(3rem,6vw,6rem)] m-0 leading-none">Tech Stack</h2>
         <p className="font-['Inter',sans-serif] text-[1.1rem] text-white/55 m-0 max-w-[500px]">
           {type === "sv"
             ? "Tekniker och verktyg jag jobbar med dagligen."
@@ -94,7 +94,7 @@ export const TechStack = () => {
 
       {/* Design & Tools */}
       <div className="flex flex-col items-end max-[1200px]:items-start gap-8 w-full">
-        <h2 className="text-[clamp(3rem,6vw,6rem)] m-0 leading-none">
+        <h2 className="text-white text-[clamp(3rem,6vw,6rem)] m-0 leading-none">
           {type === "sv" ? "Design & Verktyg" : "Design & Tools"}
         </h2>
         <p className="font-['Inter',sans-serif] text-[1.1rem] text-white/55 m-0 max-w-[500px] text-right max-[1200px]:text-left">
