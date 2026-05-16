@@ -39,7 +39,7 @@ const sendEmail = (e: React.FormEvent) => {
         <div id="contact-container" className="w-[90vw] flex items-center mb-[20vh]">
         <div className="w-full flex flex-row max-[1200px]:flex-col max-[1200px]:items-center text-lg p-4 mb-20 gap-8">
             <div className="w-full max-w-[44vw] max-[1200px]:w-[90vw] max-[1200px]:max-w-none max-[1200px]:mb-20 flex items-center flex-col">
-                <img src={picture} className="m-8 w-[22.5vw] max-[1200px]:w-[45vw] rounded-xl" alt="Picture of me" />
+                <img src={picture} className="m-8 w-[18vw] max-[1200px]:w-[45vw] rounded-xl" alt="Picture of me" />
                 <h3 className="text-start text-white font-bold ">{type === "sv" ? "Kontakt" : "Contact"}</h3>
                 <p className="text-left text-white w-full"> {type === "sv" ? "Har du frågor, idéer eller funderingar? Tveka inte att höra av dig! Jag svarar gärna på allt som rör mina projekt, samarbeten eller frontend-utveckling i allmänhet. Fyll i formuläret så hör jag av mig så snart jag kan." 
                 : "Do you have any questions, ideas, or thoughts? Don't hesitate to get in touch! I'll be happy to answer anything related to my projects, collaborations, or frontend development in general. Fill out the form and I'll get back to you as soon as I can."}
