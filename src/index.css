@@ -15,6 +15,12 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.1rem;
 }
 
+@font-face {
+  font-family: 'GrandSlang-Roman';
+  src: url('/fonts/GrandSlang-Roman.woff2') format('woff2');
+  font-display: swap;
+}
+
 body{
   margin: 0;
 }
