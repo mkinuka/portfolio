@@ -1,8 +1,8 @@
 import { useContext } from "react";
 import { LanguageContext } from "../context/LanguageContext";
 import "../styles/InteractiveMenu.css";
-import img1 from "../assets/interactiveMenuimg/mosesk1.JPEG";
-import img2 from "../assets/interactiveMenuimg/mosesk2.JPEG";
+import img1 from "../assets/interactiveMenuimg/mosesk1.jpg";
+import img2 from "../assets/interactiveMenuimg/mosesk2.jpg";
 import img3 from "../assets/interactiveMenuimg/interactiveMenuImg.png";
 import img4 from "../assets/interactiveMenuimg/interactiveMenuImg2.png";
 import img5 from "../assets/interactiveMenuimg/mail.jpg";
