@@ -1,5 +1,4 @@
 import type { PortfolioItemLangType } from "../types/portfolioType";
-
 import auctionImg from "../assets/first/The-auction.png";
 import auctionImg2 from "../assets/first/The-auction-two.png";
 import webShopImg from "../assets/secound/webshop.png";

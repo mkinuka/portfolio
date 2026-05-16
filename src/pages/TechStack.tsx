@@ -22,7 +22,6 @@ import {
   SiSupabase,
 } from "react-icons/si";
 import {  RiNextjsLine } from "react-icons/ri"
-// import NextjsIcon from "../components/NextjsIcon";
 import { TbBrandOffice } from "react-icons/tb";
 import type { TechCard } from "../types/techStack";
 
