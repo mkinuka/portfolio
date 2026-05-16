@@ -40,8 +40,5 @@ export const router = createBrowserRouter([
         ]
     }
 ],
-  {
-    basename: "/portfolio" // <-- detta är korrekt
-  }
 
 )
