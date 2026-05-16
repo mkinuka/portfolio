@@ -36,7 +36,7 @@ const sendEmail = (e: React.FormEvent) => {
   };
 
     return <>
-        <div id="contact-container" className="w-[90vw] flex items-center mb-[20vh]">
+        <div id="contact-container" className="w-[90vw] flex items-center mb-[20vh] px-20">
         <div className="w-full flex flex-row max-[1200px]:flex-col max-[1200px]:items-center text-lg p-4 mb-20 gap-8">
             <div className="w-full max-w-[44vw] max-[1200px]:w-[90vw] max-[1200px]:max-w-none max-[1200px]:mb-20 flex items-center flex-col">
                 <img src={picture} className="m-8 w-[18vw] max-[1200px]:w-[45vw] rounded-xl" alt="Picture of me" />
