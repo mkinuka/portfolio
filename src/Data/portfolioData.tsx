@@ -20,6 +20,13 @@ import greensteps from "../assets/sixth/greensteps.png"
 import greensteps2 from "../assets/sixth/greensteps2.png"
 import greensteps3 from "../assets/sixth/greensteps3.png"
 import greensteps4 from "../assets/sixth/greensteps4.png"
+import sandtimer1 from "../assets/7/sandtimer1.png"
+import sandtimer2 from "../assets/7/sandtimer2.png"
+import sandtimer3 from "../assets/7/sandtimer3.png"
+import caexpress1 from "../assets/8/caexpress1.png"
+import caexpress2 from "../assets/8/caexpress2.png"
+import caexpress3 from "../assets/8/caexpress3.png"
+import caexpress4 from "../assets/8/caexpress4.png"
 
 
 
@@ -325,5 +332,97 @@ export const portfolioItems: PortfolioItemLangType[] = [
       )
     }
 
+  },
+  // 7th //
+  {
+    sv: {
+      id: 7,
+      title: "Sandtimer",
+      imgUrl: [sandtimer1, sandtimer2, sandtimer3],
+      shortDescription: "Intern postproduktionsapp för att automatisera arbetsflöden, byggd med React, Supabase och Google Cloud Storage.",
+      description: (
+        <>
+          <p><b>Sandtimer</b> utvecklades som en intern app för ett postproduktionsbolag, med målet att automatisera och effektivisera deras processer. Appen skapades för att hantera komplexa arbetsflöden och göra vardagliga uppgifter smidigare för teamet.</p>
+          <br></br>
+          <p>På frontend användes <b>React</b> för att bygga en responsiv och interaktiv användargränssnitt som möjliggör snabb navigation och enkel datahantering. Backend-lösningen är baserad på <b>Supabase</b>, som hanterar databas och autentisering, tillsammans med <b>Google Cloud Storage</b> för säker filhantering och lagring av media.</p>
+          <br></br>
+          <p>Projektet visar hur moderna teknologier kan kombineras för att skapa skräddarsydda verktyg som löser verkliga problem och förbättrar produktiviteten i en professionell miljö.</p>
+        </>
+      ),
+    },
+    eng: {
+      id: 7,
+      title: "Sandtimer",
+      imgUrl: [sandtimer1, sandtimer2, sandtimer3],
+      shortDescription: "Internal post-production app to automate workflows, built with React, Supabase, and Google Cloud Storage.",
+      description: (
+        <>
+          <p><b>Sandtimer</b> was developed as an internal app for a post-production company, with the goal of automating and streamlining their processes. The app was designed to handle complex workflows and make everyday tasks more efficient for the team.</p>
+          <br></br>
+          <p>The frontend was built using <b>React</b> to create a responsive and interactive user interface that enables fast navigation and easy data management. The backend solution is based on <b>Supabase</b>, which handles database and authentication, along with <b>Google Cloud Storage</b> for secure file handling and media storage.</p>
+          <br></br>
+          <p>This project demonstrates how modern technologies can be combined to create custom tools that solve real-world problems and improve productivity in a professional environment.</p>
+        </>
+      ),
+    },
+  },
+  // 8th //
+  {
+    sv: {
+      id: 8,
+      title: "Catering Express",
+      imgUrl: [caexpress1, caexpress2, caexpress3, caexpress4],
+      shortDescription: "Modernisering av UI för e-handelsplattform med catering, inklusive avancerad filtrering och köksplaneringsverktyg.",
+      description: (
+        <>
+          <p><b>Catering Express</b> är en pågående uppdatering av UI:t för det företag jag jobbar på. Projektet fokuserar på att ge plattformen ett modernt ramverk och en uppdaterad visuell design, samtidigt som nya funktioner läggs till för att förbättra användarupplevelsen och effektiviteten.</p>
+          <br></br>
+          <p>Bland de nya funktionerna ingår <b>avancerad filtrering</b>, vilket gör det enklare för användare att hitta det de söker. Plattformen hanterar både <b>e-handel för butik och catering</b>, med kraftfulla verktyg för köksplanering, inköp och orderhantering.</p>
+          <br></br>
+          <p><b>Funktioner inkluderar:</b></p>
+          <ul>
+            <li><b>Köksplanering:</b> Verktyg för att organisera och planera produktionen i köket</li>
+            <li><b>Inköp- och planeringsunderlag:</b> Sortering efter datum, leverantör och avdelning</li>
+            <li><b>Ordernummervisning:</b> Tydliga utskrifter med ordernummer för enkel hantering</li>
+            <li><b>Flexibel råvaruhantering:</b> Välj vilka råvaror som ska visas på utskrifter för effektiv användning i köket</li>
+            <li><b>Historisk data:</b> Se råvarumängder från tidigare perioder för att planera kommande behov</li>
+            <li><b>Flera butiker i samma gränssnitt:</b> Hantera flera platser från en central plattform</li>
+            <li><b>Distribution mellan butiker:</b> En butik kan förbereda beställningar och distribuera dem till andra butiker för upphämtning</li>
+            <li><b>Kalender och statistik:</b> Visar vad som är populärt och när kunderna vill hämta sina beställningar</li>
+            <li><b>Tidsberäkning:</b> Beräkna tidsåtgång för orderförberedelser per dag för att säkerställa rätt bemanning</li>
+          </ul>
+          <br></br>
+          <p>Detta projekt visar på arbete med komplexa affärssystem och modern frontend-utveckling i en produktionsmiljö.</p>
+        </>
+      ),
+    },
+    eng: {
+      id: 8,
+      title: "Catering Express",
+      imgUrl: [caexpress1, caexpress2, caexpress3, caexpress4],
+      shortDescription: "UI modernization for an e-commerce platform with catering, including advanced filtering and kitchen planning tools.",
+      description: (
+        <>
+          <p><b>Catering Express</b> is an ongoing UI update for the company I work for. The project focuses on giving the platform a modern framework and updated visual design, while adding new features to improve user experience and efficiency.</p>
+          <br></br>
+          <p>Among the new features is <b>advanced filtering</b>, making it easier for users to find what they're looking for. The platform handles both <b>e-commerce for retail and catering</b>, with powerful tools for kitchen planning, procurement, and order management.</p>
+          <br></br>
+          <p><b>Features include:</b></p>
+          <ul>
+            <li><b>Kitchen planning:</b> Tools to organize and plan kitchen production</li>
+            <li><b>Procurement and planning foundation:</b> Sort by date, vendor, and department</li>
+            <li><b>Order number display:</b> Clear printouts with order numbers for easy handling</li>
+            <li><b>Flexible ingredient management:</b> Choose which ingredients to display on printouts for efficient kitchen use</li>
+            <li><b>Historical data:</b> View ingredient quantities from previous periods to plan future needs</li>
+            <li><b>Multiple stores in one interface:</b> Manage several locations from a central platform</li>
+            <li><b>Distribution between stores:</b> One store can prepare orders and distribute them to other stores for pickup</li>
+            <li><b>Calendar and statistics:</b> Shows what's popular and when customers want to pick up their orders</li>
+            <li><b>Time calculation:</b> Calculate time needed for order preparations per day to ensure proper staffing</li>
+          </ul>
+          <br></br>
+          <p>This project demonstrates work with complex business systems and modern frontend development in a production environment.</p>
+        </>
+      ),
+    },
   }
 ];
