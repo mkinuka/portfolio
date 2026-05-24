@@ -331,11 +331,11 @@ export const CareerLadder = () => {
         </div>
 
         {sel.description && (
-          <p className="cl-modal-desc">{sel.description}</p>
+          <p className="cl-modal-desc text-left">{sel.description}</p>
         )}
 
         {sel.responsibilities && (
-          <ul className="cl-modal-resp">
+          <ul className="cl-modal-resp text-left">
             {sel.responsibilities.map((r, ri) => (
               <li key={ri}>{r}</li>
             ))}

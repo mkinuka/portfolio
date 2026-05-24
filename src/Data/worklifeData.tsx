@@ -34,7 +34,7 @@ export const worklifeExpData: WorklifeExpLangType[] = [
       id: 1,
       title: "Frontend Developer (Praktik)",
       company: "Wasabiweb",
-      period: "Jan 2026 – Nu",
+      period: "Jan 2026 – Maj 2026",
       location: "Uppsala",
       responsibilities: [
         "WordPress- och PHP-utveckling",
